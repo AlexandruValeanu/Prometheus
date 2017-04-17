@@ -1,4 +1,4 @@
-package algorithms.data_structures.exceptions;
+package data_structures.exceptions;
 
 
 public class EmptyQueueException extends RuntimeException {

@@ -1,6 +1,6 @@
-package algorithms.data_structures;
+package data_structures;
 
-import algorithms.data_structures.interfaces.iStack;
+import data_structures.interfaces.iStack;
 
 import java.util.*;
 

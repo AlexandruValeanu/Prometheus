@@ -1,7 +1,7 @@
-package algorithms.data_structures;
+package data_structures;
 
-import algorithms.data_structures.exceptions.EmptyQueueException;
-import algorithms.data_structures.interfaces.iQueue;
+import data_structures.exceptions.EmptyQueueException;
+import data_structures.interfaces.iQueue;
 
 import java.util.ArrayDeque;
 
