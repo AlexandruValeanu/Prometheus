@@ -1,5 +1,7 @@
 package algorithms.data_structures;
 
+import algorithms.data_structures.interfaces.iStack;
+
 import java.util.*;
 
 /**
@@ -15,7 +17,7 @@ import java.util.*;
  *
  * @author  Alexandru Valeanu
  */
-public class Stack<E> {
+public class Stack<E> implements iStack<E> {
     private final List<E> stack = new ArrayList<>();
 
     /**
