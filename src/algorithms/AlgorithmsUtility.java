@@ -18,21 +18,41 @@ public class AlgorithmsUtility {
         return find_if_not(array, first, last, predicate) == -1;
     }
 
+    public static boolean all_of(int[] array, Predicate<Integer> predicate){
+        return all_of(array, 0, array.length, predicate);
+    }
+
     public static boolean any_of(int[] array, int first, int last, Predicate<Integer> predicate){
         return find_if(array, first, last, predicate) != -1;
+    }
+
+    public static boolean any_of(int[] array, Predicate<Integer> predicate){
+        return any_of(array, 0, array.length, predicate);
     }
 
     public static boolean none_of(int[] array, int first, int last, Predicate<Integer> predicate){
         return find_if(array, first, last, predicate) == -1;
     }
 
+    public static boolean none_of(int[] array, Predicate<Integer> predicate){
+        return none_of(array, 0, array.length, predicate);
+    }
+
     public static void for_each(int[] array, int first, int last, Function<Integer, Integer> function){
         for_each_n(array, first, last, array.length, function);
+    }
+
+    public static void for_each(int[] array, Function<Integer, Integer> function){
+        for_each(array, 0, array.length, function);
     }
 
     public static void for_each_n(int[] array, int first, int last, int n, Function<Integer, Integer> function){
         for (int i = 0; i < n && first != last; ++first, ++i)
             array[first] = function.apply(array[first]);
+    }
+
+    public static void for_each_n(int[] array, int n, Function<Integer, Integer> function){
+        for_each_n(array, 0, array.length, n, function);
     }
 
     public static int count(int[] array, int first, int last, int value){
