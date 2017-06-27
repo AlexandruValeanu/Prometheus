@@ -6,8 +6,8 @@ import java.util.function.BiPredicate;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public class AlgorithmsUtility {
-    private AlgorithmsUtility(){
+public class Algorithms {
+    private Algorithms(){
     }
 
     /*
