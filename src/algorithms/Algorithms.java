@@ -2,6 +2,8 @@ package algorithms;
 
 
 import java.util.Objects;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.BiPredicate;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -124,57 +126,29 @@ public class Algorithms {
         return -1;
     }
 
-    /*
-    Sorting operations
-     */
+    // Fisher–Yates shuffle
+    public static void shuffle(int[] a) {
+        Random rnd = new Random();
 
-    public boolean is_sorted(int[] array){
-        if (array == null)
-            return true;
+        for (int i = a.length - 1; i > 0; i--) {
+            int index = rnd.nextInt(i + 1);
 
-        for (int i = 0; i + 1 < array.length; i++) {
-            if (array[i] > array[i + 1])
-                return false;
+            // Simple swap
+            int t = a[index];
+            a[index] = a[i];
+            a[i] = t;
         }
-
-        return true;
     }
 
-    public boolean is_sorted(int[] array, int p, int q){
-        if (array == null)
-            return true;
-
-        for (int i = p; i + 1 < q; i++) {
-            if (array[i] > array[i + 1])
-                return false;
-        }
-
-        return true;
+    public static void swap(int[] a, int i, int j) {
+        int t = a[i];
+        a[i] = a[j];
+        a[j] = t;
     }
 
-    @SuppressWarnings("unchecked expression")
-    public boolean is_sorted(Comparable[] array){
-        if (array == null)
-            return true;
-
-        for (int i = 0; i + 1 < array.length; i++) {
-            if (array[i].compareTo(array[i + 1]) > 0)
-                return false;
-        }
-
-        return true;
-    }
-
-    @SuppressWarnings("unchecked expression")
-    public boolean is_sorted(Comparable[] array, int p, int q){
-        if (array == null)
-            return true;
-
-        for (int i = p; i + 1 < q; i++) {
-            if (array[i].compareTo(array[i + 1]) > 0)
-                return false;
-        }
-
-        return true;
+    public static <E> void swap(E[] a, int i, int j) {
+        E t = a[i];
+        a[i] = a[j];
+        a[j] = t;
     }
 }

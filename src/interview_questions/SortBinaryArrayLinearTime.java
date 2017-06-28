@@ -1,4 +1,4 @@
-package algorithms.sequences;
+package interview_questions;
 
 /**
  * Given an binary array, sort it in linear time and constant space.

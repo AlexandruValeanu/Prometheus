@@ -1,4 +1,4 @@
-package algorithms.sequences;
+package interview_questions;
 
 import data_structures.Pair;
 

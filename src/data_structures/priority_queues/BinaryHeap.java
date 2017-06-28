@@ -1,0 +1,178 @@
+package data_structures.priority_queues;
+
+import algorithms.Algorithms;
+import data_structures.exceptions.EmptyPriorityQueueException;
+import data_structures.interfaces.iPriorityQueue;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Comparator;
+
+public class BinaryHeap<E> implements iPriorityQueue<E> {
+    private final int DEFAULT_INITIAL_CAPACITY = 11;
+
+    private final Comparator<? super E> comparator;
+    private Object[] queue = new Object[1];
+    private int N = 0;
+
+    public BinaryHeap(Collection<? extends E> c, Comparator<? super E> comparator){
+        this.comparator = comparator;
+        this.N = 0;
+
+        if (c == null)
+            ensureCapacity(DEFAULT_INITIAL_CAPACITY);
+        else
+            ensureCapacity(Math.min(DEFAULT_INITIAL_CAPACITY, c.size()));
+
+        if (c != null)
+            makeHeap(c);
+    }
+
+    public BinaryHeap(Comparator<? super E> comparator){
+        this(null, comparator);
+    }
+
+    private void grow(){
+        int oldCapacity = queue.length;
+
+        // Double size if small; else grow by 50%
+        int newCapacity = oldCapacity + ((oldCapacity < 64) ?
+                                        (oldCapacity + 2) :
+                                        (oldCapacity >> 1));
+
+        queue = Arrays.copyOf(queue, newCapacity);
+    }
+
+    private void ensureCapacity(int requestedCapacity){
+        while (queue.length < requestedCapacity)
+            grow();
+    }
+
+    private void makeHeap(Collection<? extends E> c){
+        N = 0;
+
+        for (E item: c){
+            queue[N++] = item;
+        }
+
+        for (int j = N / 2 - 1; j >= 0; j--) {
+            downHeap(j);
+        }
+    }
+
+    @SuppressWarnings("unchecked expression")
+    private void upHeap(int pos){
+        while (pos > 0 && less(queue[pos], queue[father(pos)])){
+            Algorithms.swap(queue, pos, father(pos));
+            pos = father(pos);
+        }
+    }
+
+    @SuppressWarnings("unchecked expression")
+    private void downHeap(int pos){
+        while (leftSon(pos) < N){
+            int j = leftSon(pos);
+            int rs = rightSon(pos);
+
+            if (rs < N && less(queue[rs], queue[j]))
+                j = rs;
+
+            if (less(queue[j], queue[pos])){
+                Algorithms.swap(queue, j, pos);
+                pos = j;
+            }
+            else break;
+        }
+    }
+
+    @Override
+    public void add(E item) {
+        N++;
+        ensureCapacity(N);
+        this.queue[N - 1] = item;
+        upHeap(N - 1);
+    }
+
+    @Override
+    @SuppressWarnings("unchecked expression")
+    public E findMin() {
+        if (N == 0)
+            throw new EmptyPriorityQueueException("findMin");
+
+        return (E)queue[0];
+    }
+
+    @Override
+    @SuppressWarnings("unchecked expression")
+    public E extractMin() {
+        if (N == 0)
+            throw new EmptyPriorityQueueException("removeMin");
+
+        E elem = (E)queue[0];
+        queue[0] = null;
+        N--;
+
+        if (N > 0)
+            queue[0] = queue[N];
+
+        downHeap(0);
+        return elem;
+    }
+
+    @Override
+    public int size() {
+        return N;
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return N == 0;
+    }
+
+    @Override
+    public boolean isNonEmpty() {
+        return N != 0;
+    }
+
+    @Override
+    public Comparator<? super E> comparator() {
+        return comparator;
+    }
+
+    @Override
+    @SuppressWarnings("unchecked expression")
+    public Collection<E> toCollection() {
+        java.util.Collection<E> collection = new ArrayList<>();
+
+        for (int i = 0; i < this.N; i++) {
+            collection.add((E)queue[i]);
+        }
+
+        return collection;
+    }
+
+    @Override
+    public iPriorityQueue<E> merge(iPriorityQueue<E> otherPQ) {
+        java.util.Collection<E> collection = this.toCollection();
+        collection.addAll(otherPQ.toCollection());
+        return new BinaryHeap<>(collection, this.comparator());
+    }
+
+    private static int father(int node){
+        return (node - 1) / 2;
+    }
+
+    private static int leftSon(int node){
+        return 2 * node + 1;
+    }
+
+    private static int rightSon(int node){
+        return 2 * node + 2;
+    }
+
+    @SuppressWarnings("unchecked expression")
+    private boolean less(Object x, Object y){
+        return comparator.compare((E)x, (E)y) < 0;
+    }
+}
