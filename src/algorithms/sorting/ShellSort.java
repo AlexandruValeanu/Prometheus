@@ -9,9 +9,9 @@ public class ShellSort {
     // Complexity: Unknown (experimentally derived sequence)
     private static final int[] gaps = new int[]{701, 301, 132, 57, 23, 10, 4, 1};
 
-    public static void sort(int[] a){
+    public static void sort(int[] a, int[] gapsSeq){
         // Start with the largest gap and work down to a gap of 1
-        for (int gap: gaps){
+        for (int gap: gapsSeq){
             // Do a gapped insertion sort for this gap size.
             // The first gap elements a[0..gap-1] are already in gapped order
             // keep adding one more element until the entire array is gap sorted
@@ -29,5 +29,9 @@ public class ShellSort {
                 a[j] = temp;
             }
         }
+    }
+
+    public static void sort(int[] a){
+        sort(a, gaps);
     }
 }
