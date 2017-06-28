@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf4b95b-0154-4b6c-9a0e-0c73677bff79" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/sorting/BogoSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/sorting/CocktailSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/sorting/CombSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/sorting/CountingSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/sorting/HeapSort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/sorting/MedianOfMedians.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/sorting/QuickSelect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/sorting/RadixSortLSD.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/sorting/StoogeSort.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/Algorithms.java" afterPath="$PROJECT_DIR$/src/algorithms/Algorithms.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/QuickSort.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/QuickSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/ShellSort.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/ShellSort.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/SortingTests.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/SortingTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,12 +68,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MedianOfMedians.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MedianOfMedians.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algorithms/sorting/MedianOfMedians.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="40">
               <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="100">
+                <caret line="5" column="60" lean-forward="false" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -156,7 +157,6 @@
         <option value="$PROJECT_DIR$/src/data_structures/geometry/primitives/Vector2D.java" />
         <option value="$PROJECT_DIR$/src/data_structures/PairInts.java" />
         <option value="$PROJECT_DIR$/src/data_structures/Pair.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/algorithms/sequences/FindPairWithGivenSum.java" />
         <option value="$PROJECT_DIR$/src/algorithms/sequences/FindAllSubarraysWithZeroSum.java" />
         <option value="$PROJECT_DIR$/src/algorithms/sequences/SortBinaryArrayLinearTime.java" />
@@ -187,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/algorithms/sorting/SortingTests.java" />
         <option value="$PROJECT_DIR$/src/algorithms/Algorithms.java" />
         <option value="$PROJECT_DIR$/src/algorithms/sorting/MedianOfMedians.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -901,7 +902,7 @@
       <option name="presentableId" value="Default" />
       <updated>1492408775692</updated>
       <workItem from="1492408778556" duration="16425000" />
-      <workItem from="1498542984579" duration="24991000" />
+      <workItem from="1498542984579" duration="25321000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1492409929192</created>
@@ -987,14 +988,22 @@
       <option name="project" value="LOCAL" />
       <updated>1498632756132</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update sorting">
+      <created>1498678863038</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1498678863038</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41416000" />
+    <option name="totallyTimeSpent" value="41746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1011,7 +1020,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.334375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.334375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1073,7 +1082,8 @@
     <MESSAGE value="update main" />
     <MESSAGE value="Merge branch 'master' of https://github.com/AlexandruValeanu/Prometheus&#10;&#10;# Conflicts:&#10;#&#9;LICENSE" />
     <MESSAGE value="update prometheus" />
-    <option name="LAST_COMMIT_MESSAGE" value="update prometheus" />
+    <MESSAGE value="update sorting" />
+    <option name="LAST_COMMIT_MESSAGE" value="update sorting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1147,17 +1157,6 @@
         <state relative-caret-position="800">
           <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-            <folding />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1526,6 +1525,17 @@
         <state relative-caret-position="40">
           <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="100">
+            <caret line="5" column="60" lean-forward="false" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
