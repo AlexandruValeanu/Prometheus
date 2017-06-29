@@ -13,5 +13,6 @@ public interface iPriorityQueue<E> extends iQueue<E> {
     Comparator<? super E> comparator();
 
     java.util.Collection<E> toCollection();
+
     iPriorityQueue<E> merge(iPriorityQueue<E> otherPQ);
 }

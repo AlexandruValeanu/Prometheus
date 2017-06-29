@@ -3,17 +3,14 @@ package data_structures.priority_queues;
 import algorithms.Algorithms;
 import data_structures.exceptions.EmptyPriorityQueueException;
 import data_structures.interfaces.iPriorityQueue;
+import jdk.nashorn.internal.ir.BinaryNode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 
-//todo: fix implementation
-//todo: memory leak in remove (last element)
 public class BinaryHeap<E> implements iPriorityQueue<E> {
-    private final int DEFAULT_INITIAL_CAPACITY = 11;
-
     private final Comparator<? super E> comparator;
     private Object[] queue = new Object[1];
     private int N = 0;
@@ -33,59 +30,6 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
 
     public BinaryHeap(Comparator<? super E> comparator){
         this(null, comparator);
-    }
-
-    private void grow(){
-        int oldCapacity = queue.length;
-
-        // Double size if small; else grow by 50%
-        int newCapacity = oldCapacity + ((oldCapacity < 64) ?
-                                        (oldCapacity + 2) :
-                                        (oldCapacity >> 1));
-
-        queue = Arrays.copyOf(queue, newCapacity);
-    }
-
-    private void ensureCapacity(int requestedCapacity){
-        while (queue.length < requestedCapacity)
-            grow();
-    }
-
-    private void makeHeap(Collection<? extends E> c){
-        N = 0;
-
-        for (E item: c){
-            queue[N++] = item;
-        }
-
-        for (int j = N / 2 - 1; j >= 0; j--) {
-            downHeap(j);
-        }
-    }
-
-    @SuppressWarnings("unchecked expression")
-    private void upHeap(int pos){
-        while (pos > 0 && less(queue[pos], queue[father(pos)])){
-            Algorithms.swap(queue, pos, father(pos));
-            pos = father(pos);
-        }
-    }
-
-    @SuppressWarnings("unchecked expression")
-    private void downHeap(int pos){
-        while (leftSon(pos) < N){
-            int j = leftSon(pos);
-            int rs = rightSon(pos);
-
-            if (rs < N && less(queue[rs], queue[j]))
-                j = rs;
-
-            if (less(queue[j], queue[pos])){
-                Algorithms.swap(queue, j, pos);
-                pos = j;
-            }
-            else break;
-        }
     }
 
     @Override
@@ -109,8 +53,8 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
     @Override
     @SuppressWarnings("unchecked expression")
     public E findMin() {
-        if (N == 0)
-            throw new EmptyPriorityQueueException("findMin");
+        if (isEmpty())
+            throw new EmptyPriorityQueueException();
 
         return (E)queue[0];
     }
@@ -118,15 +62,17 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
     @Override
     @SuppressWarnings("unchecked expression")
     public E extractMin() {
-        if (N == 0)
-            throw new EmptyPriorityQueueException("removeMin");
+        if (isEmpty())
+            throw new EmptyPriorityQueueException();
 
         E elem = (E)queue[0];
         queue[0] = null;
         N--;
 
-        if (N > 0)
+        if (N > 0) {
             queue[0] = queue[N];
+            queue[N] = null;
+        }
 
         downHeap(0);
         return elem;
@@ -160,10 +106,29 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
     }
 
     @Override
-    public iPriorityQueue<E> merge(iPriorityQueue<E> otherPQ) {
+    public iPriorityQueue<E> merge(iPriorityQueue<E> other) {
         java.util.Collection<E> collection = this.toCollection();
-        collection.addAll(otherPQ.toCollection());
+        collection.addAll(other.toCollection());
         return new BinaryHeap<>(collection, this.comparator());
+    }
+
+    /* Implementation below this point */
+    private final int DEFAULT_INITIAL_CAPACITY = 11;
+
+    private void grow(){
+        int oldCapacity = queue.length;
+
+        // Double size if small; else grow by 50%
+        int newCapacity = oldCapacity + ((oldCapacity < 64) ?
+                (oldCapacity + 2) :
+                (oldCapacity >> 1));
+
+        queue = Arrays.copyOf(queue, newCapacity);
+    }
+
+    private void ensureCapacity(int requestedCapacity){
+        while (queue.length < requestedCapacity)
+            grow();
     }
 
     private static int father(int node){
@@ -181,5 +146,39 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
     @SuppressWarnings("unchecked expression")
     private boolean less(Object x, Object y){
         return comparator.compare((E)x, (E)y) < 0;
+    }
+
+    private void makeHeap(Collection<? extends E> c){
+        N = 0;
+        c.forEach(x -> queue[N++] = x);
+
+        for (int j = N / 2 - 1; j >= 0; j--) {
+            downHeap(j);
+        }
+    }
+
+    @SuppressWarnings("unchecked expression")
+    private void upHeap(int pos){
+        while (pos > 0 && less(queue[pos], queue[father(pos)])){
+            Algorithms.swap(queue, pos, father(pos));
+            pos = father(pos);
+        }
+    }
+
+    @SuppressWarnings("unchecked expression")
+    private void downHeap(int pos){
+        while (leftSon(pos) < N){
+            int j = leftSon(pos);
+            int rs = rightSon(pos);
+
+            if (rs < N && less(queue[rs], queue[j]))
+                j = rs;
+
+            if (less(queue[j], queue[pos])){
+                Algorithms.swap(queue, j, pos);
+                pos = j;
+            }
+            else break;
+        }
     }
 }

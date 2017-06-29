@@ -2,8 +2,8 @@ package algorithms.sorting;
 
 import java.util.Random;
 
-class ThreeWayQuickSort {
-    private ThreeWayQuickSort(){}
+class ThreeWayQuickSortStrings {
+    private ThreeWayQuickSortStrings(){}
 
     private static Random random = new Random();
 
