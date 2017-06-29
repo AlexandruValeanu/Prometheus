@@ -1,25 +1,30 @@
-import data_structures.interfaces.iPriorityQueue;
-import data_structures.priority_queues.BinaryHeap;
+import data_structures.SparseTableAggregate;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
+        final int N = 10000;
+        Random random = new Random(0xDEAD);
+        int[] values = new int[N];
 
-        for (int i = 0; i < 20; i++) {
-            list.add(5 - i);
+        for (int i = 0; i < N; i++) {
+            values[i] = random.nextInt();
         }
 
-        Collections.shuffle(list);
+        SparseTableAggregate table = new SparseTableAggregate(values, Integer::max);
+        table.buildTable();
 
-        iPriorityQueue<Integer> queue = new BinaryHeap<>(list, Integer::compareTo);
+        for (int i = 0; i < N; i++) {
+            int maxim = values[i];
 
-        while (queue.isNonEmpty()){
-            System.out.println(queue.extractMin());
+            for (int j = i; j < N; j++) {
+                maxim = Math.max(maxim, values[j]);
+
+                if (table.query(i, j) != maxim)
+                    System.out.printf("%d %d %d %d\n", i, j, maxim, table.query(i, j));
+            }
         }
     }
 }

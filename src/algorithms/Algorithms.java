@@ -6,9 +6,7 @@ import algorithms.sorting.SortingUtility;
 import java.util.Comparator;
 import java.util.Objects;
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.BiPredicate;
-import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -331,5 +329,23 @@ public class Algorithms {
 
     public static int partition(int[] a, int fromIndex, int toIndex) {
         return partition(a, fromIndex, toIndex, fromIndex);
+    }
+
+    public static boolean nextPermutation(int[] a, int fromIndex, int toIndex){
+        if (fromIndex == toIndex || fromIndex + 1 == toIndex)
+            return false;
+
+        int p = toIndex - 1;
+
+        while (p - 1 >= 0 && !SortingUtility.less(a[p], a[p - 1]))
+            p--;
+
+        if (p > 0){
+            swap(a, p, p - 1);
+            reverse(a, p, toIndex - 1);
+            return true;
+        }
+
+        return false;
     }
 }

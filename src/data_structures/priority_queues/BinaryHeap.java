@@ -9,6 +9,8 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 
+//todo: fix implementation
+//todo: memory leak in remove (last element)
 public class BinaryHeap<E> implements iPriorityQueue<E> {
     private final int DEFAULT_INITIAL_CAPACITY = 11;
 
@@ -95,6 +97,16 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
     }
 
     @Override
+    public E pop() {
+        return extractMin();
+    }
+
+    @Override
+    public E front() {
+        return findMin();
+    }
+
+    @Override
     @SuppressWarnings("unchecked expression")
     public E findMin() {
         if (N == 0)
@@ -128,11 +140,6 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
     @Override
     public boolean isEmpty() {
         return N == 0;
-    }
-
-    @Override
-    public boolean isNonEmpty() {
-        return N != 0;
     }
 
     @Override

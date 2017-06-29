@@ -1,18 +1,17 @@
 package data_structures.interfaces;
 
 import java.util.Comparator;
+import java.util.Queue;
 
-public interface iPriorityQueue<E> {
-    public void add(E item);
-    public E findMin();
-    public E extractMin();
+public interface iPriorityQueue<E> extends iQueue<E> {
+    E findMin();
+    E extractMin();
 
-    public int size();
-    public boolean isEmpty();
-    public boolean isNonEmpty();
+    int size();
+    boolean isEmpty();
 
-    public Comparator<? super E> comparator();
+    Comparator<? super E> comparator();
 
-    public java.util.Collection<E> toCollection();
-    public iPriorityQueue<E> merge (iPriorityQueue<E> otherPQ);
+    java.util.Collection<E> toCollection();
+    iPriorityQueue<E> merge(iPriorityQueue<E> otherPQ);
 }
