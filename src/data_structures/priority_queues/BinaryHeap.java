@@ -157,7 +157,6 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
         }
     }
 
-    @SuppressWarnings("unchecked expression")
     private void upHeap(int pos){
         while (pos > 0 && less(queue[pos], queue[father(pos)])){
             Algorithms.swap(queue, pos, father(pos));
@@ -165,8 +164,7 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
         }
     }
 
-    @SuppressWarnings("unchecked expression")
-    private void downHeap(int pos){
+   private void downHeap(int pos){
         while (leftSon(pos) < N){
             int j = leftSon(pos);
             int rs = rightSon(pos);
