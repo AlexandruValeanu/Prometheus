@@ -3,8 +3,7 @@ package algorithms.strings;
 import java.util.Arrays;
 
 class KnuthMorrisPratt {
-    private KnuthMorrisPratt() {
-    }
+    private KnuthMorrisPratt() {}
 
     private static int[] buildPrefix(char[] pattern, int N) {
         int lgPrefix = 0;
@@ -49,7 +48,7 @@ class KnuthMorrisPratt {
         return d;
     }
 
-    public static int[] computePi(String string) {
+    public static int[] computePi(CharSequence string) {
         final int N = string.length();
 
         char[] pattern = new char[N + 1];
@@ -61,7 +60,7 @@ class KnuthMorrisPratt {
         return buildPrefix(pattern, N);
     }
 
-    public static int[] computeKMP(String _pattern, String _text) {
+    public static int[] computeKMP(CharSequence _pattern, CharSequence _text) {
         final int N = _pattern.length();
         final int M = _text.length();
 
@@ -78,8 +77,11 @@ class KnuthMorrisPratt {
         return kmp(pattern, N, text, M, pi);
     }
 
-    public static int findPeriod(String s) {
-        int[] d = computeKMP(s, s + s);
+    public static int findPeriod(CharSequence s) {
+        StringBuilder sb = new StringBuilder(s);
+        sb.append(s);
+
+        int[] d = computeKMP(s, sb);
         final int N = s.length();
         int c = 0;
 
