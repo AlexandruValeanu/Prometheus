@@ -1,5 +1,3 @@
-package test;
-
 import interview_questions.MajorityElement;
 import org.junit.Test;
 

@@ -1,5 +1,3 @@
-package test;
-
 import algorithms.divide_conquer.NumberOfInversions;
 import org.junit.Ignore;
 import org.junit.Test;
