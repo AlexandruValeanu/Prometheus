@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.Algorithms;
+import algorithms.AlgorithmsOnRanges;
 
 //todo: example + description of algorithm
 public class CombSort {
@@ -23,7 +23,7 @@ public class CombSort {
 
             while (i + gap < N) {
                 if (SortingUtility.less(a[i + gap], a[i])) {
-                    Algorithms.swap(a, i, i + gap);
+                    AlgorithmsOnRanges.swap(a, i, i + gap);
                     swapped = true;
                 }
 

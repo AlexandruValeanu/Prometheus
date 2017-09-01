@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.Algorithms;
+import algorithms.AlgorithmsOnRanges;
 
 //todo: example + description of algorithm
 public class StoogeSort {
@@ -14,7 +14,7 @@ public class StoogeSort {
     // O(n^2.7095...)
     private static void stoogeSort(int[] a, int lo, int hi) {
         if (SortingUtility.less(a[hi], a[lo]))
-            Algorithms.swap(a, lo, hi);
+            AlgorithmsOnRanges.swap(a, lo, hi);
 
         int length = hi - lo + 1;
 

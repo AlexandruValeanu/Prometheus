@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.Algorithms;
+import algorithms.AlgorithmsOnRanges;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ public class CountingSort {
     private CountingSort(){}
 
     public static void sort(int a[]){
-        final int MAX_V = Algorithms.maxElement(a);
+        final int MAX_V = AlgorithmsOnRanges.maxElement(a);
         int[] c = new int[MAX_V + 1];
         int[] b = new int[a.length];
 
@@ -23,7 +23,7 @@ public class CountingSort {
 
         for (int x : a) c[x]++;
 
-        Algorithms.partialSum(c, 0, MAX_V + 1);
+        AlgorithmsOnRanges.partialSum(c, 0, MAX_V + 1);
 
         for (int i = N - 1; i >= 0; i--)
             b[--c[a[i]]] = a[i];

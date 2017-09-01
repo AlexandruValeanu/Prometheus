@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.Algorithms;
+import algorithms.AlgorithmsOnRanges;
 
 import java.util.Arrays;
 
@@ -34,7 +34,7 @@ public class RadixSortLSD {
             for (int x: a)
                 ++c[(x >> shift) & mask];
 
-            Algorithms.partialSum(c, 0, RADIX + 1);
+            AlgorithmsOnRanges.partialSum(c, 0, RADIX + 1);
 
             for (int i = a.length - 1; i >= 0; i--) {
                 b[--c[(a[i] >> shift) & mask]] = a[i];

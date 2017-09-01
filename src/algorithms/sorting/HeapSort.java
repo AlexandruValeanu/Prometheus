@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.Algorithms;
+import algorithms.AlgorithmsOnRanges;
 
 //todo: example + description of algorithm
 public class HeapSort {
@@ -16,12 +16,12 @@ public class HeapSort {
         }
 
         while (n >= 1){
-            Algorithms.swap(a, 0, n - 1);
+            AlgorithmsOnRanges.swap(a, 0, n - 1);
             n--;
             sink(a, 0, n);
         }
 
-        Algorithms.reverse(a);
+        AlgorithmsOnRanges.reverse(a);
     }
 
     private static void sink(int[] a, int pos, int N) {
@@ -33,7 +33,7 @@ public class HeapSort {
                 j = rs;
 
             if (SortingUtility.less(a[j], a[pos])){
-                Algorithms.swap(a, j, pos);
+                AlgorithmsOnRanges.swap(a, j, pos);
                 pos = j;
             }
             else break;

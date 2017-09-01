@@ -12,17 +12,17 @@ public class UnionFind {
         rank = new int[N];
         father = new int[N];
         size = new int[N];
+        numberOfComponents = 0;
 
         for (int i = 0; i < N; i++)
             makeSet(i);
-
-        numberOfComponents = N;
     }
 
     public void makeSet(int node){
         father[node] = node;
         rank[node] = 1;
         size[node] = 1;
+        numberOfComponents++;
     }
 
     public int findRoot(int node){

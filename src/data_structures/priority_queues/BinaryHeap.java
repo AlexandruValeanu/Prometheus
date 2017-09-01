@@ -1,9 +1,8 @@
 package data_structures.priority_queues;
 
-import algorithms.Algorithms;
+import algorithms.AlgorithmsOnRanges;
 import data_structures.exceptions.EmptyPriorityQueueException;
 import data_structures.interfaces.iPriorityQueue;
-import jdk.nashorn.internal.ir.BinaryNode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -159,7 +158,7 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
 
     private void upHeap(int pos){
         while (pos > 0 && less(queue[pos], queue[father(pos)])){
-            Algorithms.swap(queue, pos, father(pos));
+            AlgorithmsOnRanges.swap(queue, pos, father(pos));
             pos = father(pos);
         }
     }
@@ -173,7 +172,7 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
                 j = rs;
 
             if (less(queue[j], queue[pos])){
-                Algorithms.swap(queue, j, pos);
+                AlgorithmsOnRanges.swap(queue, j, pos);
                 pos = j;
             }
             else break;

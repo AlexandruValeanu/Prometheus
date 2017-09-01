@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.Algorithms;
+import algorithms.AlgorithmsOnRanges;
 
 //todo: implement
 //todo: example + description of algorithm
@@ -16,7 +16,7 @@ public class BubbleSort {
 
             for (int i = 1; i < n; i++) {
                 if (SortingUtility.less(a[i], a[i - 1])){
-                    Algorithms.swap(a, i - 1, i);
+                    AlgorithmsOnRanges.swap(a, i - 1, i);
                     newn = i;
                 }
             }
