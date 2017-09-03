@@ -1,10 +1,10 @@
 package algorithms.number_theory;
 
-public class PrimalityTesting {
-    private PrimalityTesting(){}
+public class Primality {
+    private Primality(){}
 
     public static boolean isPrimeNaive(int n){
-        if (n == 1)
+        if (n <= 1)
             return false;
 
         for (int i = 2, s = (int) Math.sqrt(n); i <= s; i++) {
@@ -16,7 +16,7 @@ public class PrimalityTesting {
     }
 
     public static boolean isPrimeNaiveOpt(int n){
-        if ((n > 2 && n % 2 == 0) || n == 1)
+        if ((n > 2 && n % 2 == 0) || n <= 1)
             return false;
 
         for (int i = 3, s = (int) Math.sqrt(n); i <= s; i += 2) {
@@ -69,14 +69,11 @@ public class PrimalityTesting {
         else
             bases = basesLong;
 
-        if (n < 2)
+        if (n < 2 || (n > 2 && n % 2 == 0))
             return false;
 
         if (n == 2 || n == 3)
             return true;
-
-        if (n % 2 == 0)
-            return false;
 
         int s = 0;
         long d = n - 1;
@@ -93,7 +90,7 @@ public class PrimalityTesting {
         }
 
         for (int a: bases){
-            if (a != n && fastWitness(a, d, n, s)) // do not use a is a == n
+            if (a != n && fastWitness(a, d, n, s)) // do not use a if a == n
                 return false; // definitely composite
         }
 
@@ -102,5 +99,16 @@ public class PrimalityTesting {
     
     public static boolean isPrime(long n){
         return millerRabinPrimalityTest(n);
+    }
+
+    public static long nextprime(long n){
+        if (n < 1)
+            n = 1;
+
+        do {
+            n++;
+        } while (!isPrime(n));
+
+        return n;
     }
 }
