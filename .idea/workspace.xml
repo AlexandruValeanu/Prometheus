@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf4b95b-0154-4b6c-9a0e-0c73677bff79" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/number_theory/PrimalityTesting.java" afterPath="$PROJECT_DIR$/src/algorithms/number_theory/Primality.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Prometheus/Main.class" afterPath="$PROJECT_DIR$/out/production/Prometheus/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/number_theory/NumberOfDivisors.java" afterPath="$PROJECT_DIR$/src/algorithms/number_theory/NumberOfDivisors.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/number_theory/SieveOfEratosthenes.java" afterPath="$PROJECT_DIR$/src/algorithms/number_theory/SieveOfEratosthenes.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,8 +89,8 @@
       <file leaf-file-name="NumberOfDivisors.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/NumberOfDivisors.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="-525">
+              <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
               <folding>
                 <element signature="e#561#562#0" expanded="true" />
                 <element signature="e#620#621#0" expanded="true" />
@@ -974,7 +972,7 @@
       <workItem from="1504198040325" duration="6826000" />
       <workItem from="1504211173591" duration="7087000" />
       <workItem from="1504441652468" duration="98000" />
-      <workItem from="1504441811522" duration="8708000" />
+      <workItem from="1504441811522" duration="8872000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1492409929192</created>
@@ -1137,7 +1135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504447375178</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add mod arit">
+      <created>1504450982155</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1504450982155</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1173,7 +1178,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98125000" />
+    <option name="totallyTimeSpent" value="98289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1922" height="1092" extended-state="6" />
@@ -1614,8 +1619,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/NumberOfDivisors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="-525">
+          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
           <folding>
             <element signature="e#561#562#0" expanded="true" />
             <element signature="e#620#621#0" expanded="true" />

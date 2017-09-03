@@ -7,7 +7,7 @@ import static algorithms.number_theory.Primality.isPrime;
 public class NumberOfDivisors {
     private NumberOfDivisors(){}
 
-    public static int naiveCountDivisors(int n){
+    public static int countDivisorsNaive(int n){
         int sol = 1;
 
         for (int i = 2; i * i <= n; i++) {
