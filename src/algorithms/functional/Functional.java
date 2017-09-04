@@ -262,11 +262,12 @@ public class Functional {
     }
 
     @Contract("_, null -> null")
-    @SuppressWarnings("unchecked")
+    @SafeVarargs
     public static <T, S> S[] map(Function<T, S> f, T... xs){
         if (xs == null)
             return null;
 
+        @SuppressWarnings("unchecked")
         S[] ys = (S[]) new Object[xs.length];
 
         for (int i = 0; i < xs.length; i++) {
@@ -320,6 +321,79 @@ public class Functional {
     @SafeVarargs
     public static <T> T[] take(int k, T... xs){
         return ArrayUtils.subarray(xs, 0, k);
+    }
+
+    @Contract(value = "_, null -> null", pure = true)
+    public static byte[] takeRight(int k, byte... xs){
+        if (xs == null)
+            return null;
+
+        return ArrayUtils.subarray(xs, xs.length - k, xs.length);
+    }
+
+    @Contract(value = "_, null -> null", pure = true)
+    public static boolean[] takeRight(int k, boolean... xs){
+        if (xs == null)
+            return null;
+
+        return ArrayUtils.subarray(xs, xs.length - k, xs.length);
+    }
+
+    @Contract(value = "_, null -> null", pure = true)
+    public static char[] takeRight(int k, char... xs){
+        if (xs == null)
+            return null;
+
+        return ArrayUtils.subarray(xs, xs.length - k, xs.length);
+    }
+
+    @Contract(value = "_, null -> null", pure = true)
+    public static short[] takeRight(int k, short... xs){
+        if (xs == null)
+            return null;
+
+        return ArrayUtils.subarray(xs, xs.length - k, xs.length);
+    }
+
+    @Contract(value = "_, null -> null", pure = true)
+    public static int[] takeRight(int k, int... xs){
+        if (xs == null)
+            return null;
+
+        return ArrayUtils.subarray(xs, xs.length - k, xs.length);
+    }
+
+    @Contract(value = "_, null -> null", pure = true)
+    public static long[] takeRight(int k, long... xs){
+        if (xs == null)
+            return null;
+
+        return ArrayUtils.subarray(xs, xs.length - k, xs.length);
+    }
+
+    @Contract(value = "_, null -> null", pure = true)
+    public static float[] takeRight(int k, float... xs){
+        if (xs == null)
+            return null;
+
+        return ArrayUtils.subarray(xs, xs.length - k, xs.length);
+    }
+
+    @Contract(value = "_, null -> null", pure = true)
+    public static double[] takeRight(int k, double... xs){
+        if (xs == null)
+            return null;
+
+        return ArrayUtils.subarray(xs, xs.length - k, xs.length);
+    }
+
+    @Contract(value = "_, null -> null", pure = true)
+    @SafeVarargs
+    public static <T> T[] takeRight(int k, T... xs){
+        if (xs == null)
+            return null;
+
+        return ArrayUtils.subarray(xs, xs.length - k, xs.length);
     }
 
     @Contract(value = "_, null -> null", pure = true)
@@ -432,6 +506,15 @@ public class Functional {
         return ArrayUtils.subarray(xs, 0, xs.length - k);
     }
 
+    @Contract(value = "_, null -> null", pure = true)
+    @SafeVarargs
+    public static <T> T[] dropRight(int k, T... xs){
+        if (xs == null)
+            return null;
+
+        return ArrayUtils.subarray(xs, 0, xs.length - k);
+    }
+
     // todo: implement all filters - after implementing corresponding streams
 
     public static int[] filter(IntPredicate p, int... xs){
@@ -446,9 +529,11 @@ public class Functional {
         return Arrays.stream(xs).filter(p).toArray();
     }
 
-    @SuppressWarnings("unchecked")
+    @SafeVarargs
     public static <T> T[] filter(Predicate<T> p, T... xs){
-        return (T[]) Arrays.stream(xs).filter(p).toArray();
+        @SuppressWarnings("unchecked")
+        T[] ys = (T[]) Arrays.stream(xs).filter(p).toArray();
+        return ys;
     }
 
     public static boolean allMatch(IntPredicate p, int... xs){
@@ -463,6 +548,7 @@ public class Functional {
         return Arrays.stream(xs).allMatch(p);
     }
 
+    @SafeVarargs
     public static <T> boolean allMatch(Predicate<T> p, T... xs){
         return Arrays.stream(xs).allMatch(p);
     }
@@ -479,14 +565,15 @@ public class Functional {
         return Arrays.stream(xs).anyMatch(p);
     }
 
+    @SafeVarargs
     public static <T> boolean anyMatch(Predicate<T> p, T... xs){
         return Arrays.stream(xs).anyMatch(p);
     }
 
-    // todo: implement all first - after implementing OptionalChar, OptionalChar, ...
+    // todo: implement all head(s) - after implementing OptionalChar, OptionalChar, ...
 
     @Contract("!null -> !null")
-    public static OptionalInt first(int... xs){
+    public static OptionalInt head(int... xs){
         if (xs == null)
             return OptionalInt.empty();
         else
@@ -494,7 +581,7 @@ public class Functional {
     }
 
     @Contract("!null -> !null")
-    public static OptionalLong first(long... xs){
+    public static OptionalLong head(long... xs){
         if (xs == null)
             return OptionalLong.empty();
         else
@@ -502,7 +589,7 @@ public class Functional {
     }
 
     @Contract("!null -> !null")
-    public static OptionalDouble first(double... xs){
+    public static OptionalDouble head(double... xs){
         if (xs == null)
             return OptionalDouble.empty();
         else
@@ -511,11 +598,51 @@ public class Functional {
 
     @Contract("!null -> !null")
     @SafeVarargs
-    public static <T> Optional<T> first(T... xs){
+    public static <T> Optional<T> head(T... xs){
         if (xs == null)
             return Optional.empty();
         else
             return Optional.of(xs[0]);
+    }
+
+    @Contract(value = "null -> null", pure = true)
+    public static byte[] tail(byte... xs){
+        return drop(1, xs);
+    }
+
+    @Contract(value = "null -> null", pure = true)
+    public static boolean[] tail(boolean... xs){
+        return drop(1, xs);
+    }
+
+    @Contract(value = "null -> null", pure = true)
+    public static char[] tail(char... xs){
+        return drop(1, xs);
+    }
+
+    @Contract(value = "null -> null", pure = true)
+    public static short[] tail(short... xs){
+        return drop(1, xs);
+    }
+
+    @Contract(value = "null -> null", pure = true)
+    public static int[] tail(int... xs){
+        return drop(1, xs);
+    }
+
+    @Contract(value = "null -> null", pure = true)
+    public static long[] tail(long... xs){
+        return drop(1, xs);
+    }
+
+    @Contract(value = "null -> null", pure = true)
+    public static float[] tail(float... xs){
+        return drop(1, xs);
+    }
+
+    @Contract(value = "null -> null", pure = true)
+    public static double[] tail(double... xs){
+        return drop(1, xs);
     }
 
     // todo: implement all last - after implementing OptionalChar, OptionalChar, ...
