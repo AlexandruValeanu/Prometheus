@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.AlgorithmsOnRanges;
+import algorithms.arrays.ArrayAlgorithms;
 
 import java.util.Arrays;
 import java.util.OptionalInt;
@@ -29,12 +29,12 @@ public class MedianOfMedians {
         for (int blockStart = fromIndex; blockStart != lastBlockStart; blockStart += 5, ++nextMedianPosition) {
             /* Sort the block. */
             Arrays.sort(a, blockStart, blockStart + 5);
-            AlgorithmsOnRanges.swap(a, nextMedianPosition, blockStart + 2);
+            ArrayAlgorithms.swap(a, nextMedianPosition, blockStart + 2);
         }
 
         if (lastBlockStart != toIndex){
             Arrays.sort(a, lastBlockStart, toIndex);
-            AlgorithmsOnRanges.swap(a, nextMedianPosition, lastBlockStart + (toIndex - lastBlockStart) / 2);
+            ArrayAlgorithms.swap(a, nextMedianPosition, lastBlockStart + (toIndex - lastBlockStart) / 2);
 
             ++nextMedianPosition;
         }
@@ -42,8 +42,8 @@ public class MedianOfMedians {
         int medianOfMedians = fromIndex + (nextMedianPosition - fromIndex) / 2;
         selection(a, fromIndex, nextMedianPosition, medianOfMedians);
 
-        AlgorithmsOnRanges.swap(a, medianOfMedians, fromIndex);
-        int crossoverPoint = AlgorithmsOnRanges.partition(a, fromIndex, toIndex);
+        ArrayAlgorithms.swap(a, medianOfMedians, fromIndex);
+        int crossoverPoint = ArrayAlgorithms.partition(a, fromIndex, toIndex);
 
         if (crossoverPoint == k) {
             // nothing left to be done

@@ -1,6 +1,6 @@
 package data_structures.priority_queues;
 
-import algorithms.AlgorithmsOnRanges;
+import algorithms.arrays.ArrayAlgorithms;
 import data_structures.exceptions.EmptyPriorityQueueException;
 import data_structures.interfaces.iPriorityQueue;
 
@@ -158,7 +158,7 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
 
     private void upHeap(int pos){
         while (pos > 0 && less(queue[pos], queue[father(pos)])){
-            AlgorithmsOnRanges.swap(queue, pos, father(pos));
+            ArrayAlgorithms.swap(queue, pos, father(pos));
             pos = father(pos);
         }
     }
@@ -172,7 +172,7 @@ public class BinaryHeap<E> implements iPriorityQueue<E> {
                 j = rs;
 
             if (less(queue[j], queue[pos])){
-                AlgorithmsOnRanges.swap(queue, j, pos);
+                ArrayAlgorithms.swap(queue, j, pos);
                 pos = j;
             }
             else break;

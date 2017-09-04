@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.arrays;
 
 
 import algorithms.sorting.SortingUtility;
@@ -8,8 +8,8 @@ import java.util.Objects;
 import java.util.Random;
 import java.util.function.*;
 
-public class AlgorithmsOnRanges {
-    private AlgorithmsOnRanges(){
+public class ArrayAlgorithms {
+    private ArrayAlgorithms(){
     }
 
     public static int findIf(int[] array, int from, int to, IntPredicate predicate){
@@ -236,7 +236,7 @@ public class AlgorithmsOnRanges {
 
     public static void reverse(int[] a, int i, int j){
         while (i < j){
-            AlgorithmsOnRanges.swap(a, i, j);
+            ArrayAlgorithms.swap(a, i, j);
             i++; j--;
         }
     }
@@ -249,7 +249,7 @@ public class AlgorithmsOnRanges {
         }
         
         while (i < j){
-            AlgorithmsOnRanges.swap(a, i, j);
+            ArrayAlgorithms.swap(a, i, j);
             i++; j--;
         }
     }
@@ -278,7 +278,7 @@ public class AlgorithmsOnRanges {
         if (from == to || from + 1 == to)
             return from;
 
-        AlgorithmsOnRanges.swap(a, from, pivot);
+        ArrayAlgorithms.swap(a, from, pivot);
 
         int lhs = from + 1;
         int rhs = to - 1;
@@ -293,13 +293,13 @@ public class AlgorithmsOnRanges {
             if (lhs == rhs)
                 break;
 
-            AlgorithmsOnRanges.swap(a, lhs, rhs);
+            ArrayAlgorithms.swap(a, lhs, rhs);
         }
 
         if (SortingUtility.less(a[from], a[lhs]))
             return from;
 
-        AlgorithmsOnRanges.swap(a, from, lhs);
+        ArrayAlgorithms.swap(a, from, lhs);
         return lhs;
     }
 
@@ -315,7 +315,7 @@ public class AlgorithmsOnRanges {
         if (from == to || from + 1 == to)
             return from;
 
-        AlgorithmsOnRanges.swap(a, from, pivot);
+        ArrayAlgorithms.swap(a, from, pivot);
 
         int lhs = from + 1;
         int rhs = to - 1;
@@ -330,13 +330,13 @@ public class AlgorithmsOnRanges {
             if (lhs == rhs)
                 break;
 
-            AlgorithmsOnRanges.swap(a, lhs, rhs);
+            ArrayAlgorithms.swap(a, lhs, rhs);
         }
 
         if (SortingUtility.less(a[from], a[lhs]))
             return from;
 
-        AlgorithmsOnRanges.swap(a, from, lhs);
+        ArrayAlgorithms.swap(a, from, lhs);
         return lhs;
     }
 

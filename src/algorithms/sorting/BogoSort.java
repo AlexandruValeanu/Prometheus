@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.AlgorithmsOnRanges;
+import algorithms.arrays.ArrayAlgorithms;
 
 //todo: example + description of algorithm
 public class BogoSort {
@@ -9,7 +9,7 @@ public class BogoSort {
     // O((n+1)!)
     public static void sort(int[] a){
         do {
-            AlgorithmsOnRanges.shuffle(a);
+            ArrayAlgorithms.shuffle(a);
 
         } while (!SortingUtility.isSorted(a));
     }

@@ -2,9 +2,11 @@
   <dictionary name="alex">
     <words>
       <w>ciura</w>
+      <w>foldl</w>
       <w>gapped</w>
       <w>marcin</w>
       <w>primality</w>
+      <w>unboxed</w>
     </words>
   </dictionary>
 </component>

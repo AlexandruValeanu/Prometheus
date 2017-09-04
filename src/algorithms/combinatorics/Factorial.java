@@ -1,5 +1,9 @@
 package algorithms.combinatorics;
 
+import algorithms.number_theory.EulerTotientFunction;
+import algorithms.number_theory.ModularArithmetic;
+import algorithms.number_theory.ModularInverse;
+
 import java.math.BigInteger;
 
 public class Factorial {
@@ -72,5 +76,22 @@ public class Factorial {
         }
 
         return fact;
+    }
+
+    public static int[] computeInverseFactorialModArray(int n, int modulo){
+        assert n >= 1;
+        int phi = EulerTotientFunction.computePhi(modulo);
+
+        int[] invFact = new int[n + 1];
+        invFact[0] = invFact[1] = 1;
+
+        int factorial = 1;
+
+        for (int i = 2; i <= n; i++) {
+            factorial = ModularArithmetic.multiplyMod(factorial, i, modulo);
+            invFact[i] = ModularInverse.computeModInverse(factorial, modulo, phi);
+        }
+
+        return invFact;
     }
 }

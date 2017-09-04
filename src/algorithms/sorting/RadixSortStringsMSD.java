@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.AlgorithmsOnRanges;
+import algorithms.arrays.ArrayAlgorithms;
 
 public class RadixSortStringsMSD {
     private RadixSortStringsMSD(){}
@@ -47,7 +47,7 @@ public class RadixSortStringsMSD {
             for (int i = lo; i <= hi; i++)
                 count[charAt(array[i], d) + 2]++;
 
-            AlgorithmsOnRanges.partialSum(count, 0, RADIX + 2);
+            ArrayAlgorithms.partialSum(count, 0, RADIX + 2);
 
             for (int i = lo; i <= hi; i++)
                 aux[count[charAt(array[i], d) + 1]++] = array[i];

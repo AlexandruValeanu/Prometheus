@@ -1,17 +1,17 @@
-package data_structures;
+package data_structures.pair;
 
-import java.util.Map;
 import java.util.Objects;
-import java.util.Set;
 
 /**
  * Pair (tuple of two)
  */
 public class Pair<E1, E2> {
-    private E1 first = null;
-    private E2 second = null;
+    E1 first;
+    E2 second;
 
     public Pair(){
+        this.first = null;
+        this.second = null;
     }
 
     public Pair(E1 first, E2 second) {
@@ -35,18 +35,19 @@ public class Pair<E1, E2> {
         this.second = second;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Pair)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         Pair<?, ?> pair = (Pair<?, ?>) o;
-        return Objects.equals(getFirst(), pair.getFirst()) &&
-                Objects.equals(getSecond(), pair.getSecond());
+        return Objects.equals(first, pair.first) &&
+                Objects.equals(second, pair.second);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getFirst(), getSecond());
+        return Objects.hash(first, second);
     }
 
     @Override

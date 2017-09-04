@@ -24,8 +24,7 @@ public class NumberOfDivisors {
         return sol;
     }
 
-    public static double nthRoot(double number, double r)
-    {
+    public static double nthRoot(double number, double r) {
         return Math.pow(Math.E, Math.log(number)/r);
     }
 

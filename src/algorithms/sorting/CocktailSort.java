@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.AlgorithmsOnRanges;
+import algorithms.arrays.ArrayAlgorithms;
 
 //todo: example + description of algorithm
 public class CocktailSort {
@@ -19,7 +19,7 @@ public class CocktailSort {
 
             for (int i = begin; i <= end; ++i)
                 if (SortingUtility.less(a[i + 1], a[i])) {
-                    AlgorithmsOnRanges.swap(a, i, i + 1);
+                    ArrayAlgorithms.swap(a, i, i + 1);
                     swapped = true;
                 }
 
@@ -31,7 +31,7 @@ public class CocktailSort {
 
             for (int i = end; i >= begin; i--)
                 if (SortingUtility.less(a[i + 1], a[i])) {
-                    AlgorithmsOnRanges.swap(a, i, i + 1);
+                    ArrayAlgorithms.swap(a, i, i + 1);
                     swapped = true;
                 }
 

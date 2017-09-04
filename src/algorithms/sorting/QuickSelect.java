@@ -4,7 +4,7 @@ import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.Random;
 
-import static algorithms.AlgorithmsOnRanges.partition;
+import static algorithms.arrays.ArrayAlgorithms.partition;
 
 //todo: test + explain
 public class QuickSelect {

@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.AlgorithmsOnRanges;
+import algorithms.arrays.ArrayAlgorithms;
 
 //todo: example + description of algorithm
 public class SelectionSort {
@@ -17,7 +17,7 @@ public class SelectionSort {
             }
 
             if (i != minPos)
-                AlgorithmsOnRanges.swap(a, i, minPos);
+                ArrayAlgorithms.swap(a, i, minPos);
         }
     }
 }

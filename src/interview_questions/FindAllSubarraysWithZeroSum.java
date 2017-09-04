@@ -1,6 +1,6 @@
 package interview_questions;
 
-import data_structures.Pair;
+import data_structures.pair.Pair;
 
 import java.util.*;
 

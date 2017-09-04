@@ -2,9 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf4b95b-0154-4b6c-9a0e-0c73677bff79" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/arrays/ArrayBoxingUnboxing.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/Functional.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/BooleanBinaryOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/BooleanUnaryOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/ByteBinaryOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/ByteUnaryOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/CharBinaryOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/CharUnaryOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/FloatBinaryOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/FloatUnaryOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/ShortBinaryOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/ShortUnaryOperator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/number_theory/EulerTotientFunction.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/number_theory/GreatestCommonDivisor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/number_theory/PrimeFactorization.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairChar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairDouble.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairInt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairLong.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/tuple/Tuple.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleChar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleDouble.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleInt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleLong.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleCharIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleDoubleIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleIntIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleLongIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/PrimeFactorizationTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/AlgorithmsOnRanges.java" afterPath="$PROJECT_DIR$/src/algorithms/arrays/ArrayAlgorithms.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/data_structures/Pair.java" afterPath="$PROJECT_DIR$/src/data_structures/pair/Pair.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Prometheus/Main.class" afterPath="$PROJECT_DIR$/out/production/Prometheus/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/alex.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/alex.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prometheus.iml" afterPath="$PROJECT_DIR$/Prometheus.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/combinatorics/Combinations.java" afterPath="$PROJECT_DIR$/src/algorithms/combinatorics/Combinations.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/combinatorics/Factorial.java" afterPath="$PROJECT_DIR$/src/algorithms/combinatorics/Factorial.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/divide_conquer/NumberOfInversions.java" afterPath="$PROJECT_DIR$/src/algorithms/divide_conquer/NumberOfInversions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/number_theory/BinaryExponentiation.java" afterPath="$PROJECT_DIR$/src/algorithms/number_theory/BinaryExponentiation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/number_theory/ModularArithmetic.java" afterPath="$PROJECT_DIR$/src/algorithms/number_theory/ModularArithmetic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/number_theory/ModularInverse.java" afterPath="$PROJECT_DIR$/src/algorithms/number_theory/ModularInverse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/number_theory/NumberOfDivisors.java" afterPath="$PROJECT_DIR$/src/algorithms/number_theory/NumberOfDivisors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/BogoSort.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/BogoSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/BubbleSort.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/BubbleSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/CocktailSort.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/CocktailSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/CombSort.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/CombSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/CountingSort.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/CountingSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/HeapSort.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/HeapSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/MedianOfMedians.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/MedianOfMedians.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/QuickSelect.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/QuickSelect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/QuickSort.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/QuickSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/RadixSortLSD.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/RadixSortLSD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/RadixSortStringsLSD.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/RadixSortStringsLSD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/RadixSortStringsMSD.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/RadixSortStringsMSD.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/SelectionSort.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/SelectionSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/sorting/StoogeSort.java" afterPath="$PROJECT_DIR$/src/algorithms/sorting/StoogeSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/priority_queues/BinaryHeap.java" afterPath="$PROJECT_DIR$/src/data_structures/priority_queues/BinaryHeap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/interview_questions/FindAllSubarraysWithZeroSum.java" afterPath="$PROJECT_DIR$/src/interview_questions/FindAllSubarraysWithZeroSum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/interview_questions/FindPairWithGivenSum.java" afterPath="$PROJECT_DIR$/src/interview_questions/FindPairWithGivenSum.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,114 +74,95 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Combinations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/combinatorics/Combinations.java">
+      <file leaf-file-name="Functional.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/algorithms/functional/Functional.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <element signature="e#131#132#0" expanded="true" />
-                <element signature="e#175#176#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-281">
-              <caret line="195" column="13" lean-forward="false" selection-start-line="195" selection-start-column="13" selection-end-line="195" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SieveOfEratosthenes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/SieveOfEratosthenes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1299">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="618" column="0" lean-forward="true" selection-start-line="618" selection-start-column="0" selection-end-line="618" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2526#2527#0" expanded="true" />
-                <element signature="e#2571#2572#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Primality.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/Primality.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="92" column="69" lean-forward="false" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
-              <folding>
-                <element signature="e#2474#2475#0" expanded="true" />
-                <element signature="e#2524#2525#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModularInverse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/ModularInverse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumberOfDivisors.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/NumberOfDivisors.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-525">
-              <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-              <folding>
-                <element signature="e#561#562#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModularArithmetic.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/ModularArithmetic.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2826">
-              <caret line="157" column="39" lean-forward="false" selection-start-line="157" selection-start-column="39" selection-end-line="157" selection-end-column="39" />
-              <folding>
-                <element signature="e#1898#1899#0" expanded="true" />
-                <element signature="e#1949#1950#0" expanded="true" />
-                <element signature="e#2012#2013#0" expanded="true" />
-                <element signature="e#2048#2049#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BinaryExponentiation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/BinaryExponentiation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-867">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding>
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#688#689#0" expanded="true" />
-                <element signature="e#1717#1718#0" expanded="true" />
-                <element signature="e#1756#1757#0" expanded="true" />
+                <element signature="e#6256#6286#0" expanded="true" />
+                <element signature="e#6666#6667#0" expanded="true" />
+                <element signature="e#6718#6719#0" expanded="true" />
+                <element signature="e#6829#6830#0" expanded="true" />
+                <element signature="e#6881#6882#0" expanded="true" />
+                <element signature="e#6986#6987#0" expanded="true" />
+                <element signature="e#7038#7039#0" expanded="true" />
+                <element signature="e#7141#7142#0" expanded="true" />
+                <element signature="e#7193#7194#0" expanded="true" />
+                <element signature="e#7300#7301#0" expanded="true" />
+                <element signature="e#7352#7353#0" expanded="true" />
+                <element signature="e#7457#7458#0" expanded="true" />
+                <element signature="e#7509#7510#0" expanded="true" />
+                <element signature="e#7616#7617#0" expanded="true" />
+                <element signature="e#7668#7669#0" expanded="true" />
+                <element signature="e#7777#7778#0" expanded="true" />
+                <element signature="e#7829#7830#0" expanded="true" />
+                <element signature="e#7949#7950#0" expanded="true" />
+                <element signature="e#8001#8002#0" expanded="true" />
+                <element signature="e#8106#8107#0" expanded="true" />
+                <element signature="e#8174#8175#0" expanded="true" />
+                <element signature="e#8285#8286#0" expanded="true" />
+                <element signature="e#8353#8354#0" expanded="true" />
+                <element signature="e#8458#8459#0" expanded="true" />
+                <element signature="e#8526#8527#0" expanded="true" />
+                <element signature="e#8633#8634#0" expanded="true" />
+                <element signature="e#8701#8702#0" expanded="true" />
+                <element signature="e#8804#8805#0" expanded="true" />
+                <element signature="e#8872#8873#0" expanded="true" />
+                <element signature="e#8977#8978#0" expanded="true" />
+                <element signature="e#9045#9046#0" expanded="true" />
+                <element signature="e#9152#9153#0" expanded="true" />
+                <element signature="e#9220#9221#0" expanded="true" />
+                <element signature="e#9329#9330#0" expanded="true" />
+                <element signature="e#9397#9398#0" expanded="true" />
+                <element signature="e#9517#9518#0" expanded="true" />
+                <element signature="e#9585#9586#0" expanded="true" />
+                <element signature="e#11528#11529#0" expanded="true" />
+                <element signature="e#11588#11589#0" expanded="true" />
+                <element signature="e#11651#11652#0" expanded="true" />
+                <element signature="e#11711#11712#0" expanded="true" />
+                <element signature="e#11780#11781#0" expanded="true" />
+                <element signature="e#11840#11841#0" expanded="true" />
+                <element signature="e#11847#11877#0" expanded="true" />
+                <element signature="e#11935#11936#0" expanded="true" />
+                <element signature="e#12001#12002#0" expanded="true" />
+                <element signature="e#12065#12066#0" expanded="true" />
+                <element signature="e#12117#12118#0" expanded="true" />
+                <element signature="e#12183#12184#0" expanded="true" />
+                <element signature="e#12235#12236#0" expanded="true" />
+                <element signature="e#12305#12306#0" expanded="true" />
+                <element signature="e#12357#12358#0" expanded="true" />
+                <element signature="e#12423#12424#0" expanded="true" />
+                <element signature="e#12475#12476#0" expanded="true" />
+                <element signature="e#12539#12540#0" expanded="true" />
+                <element signature="e#12591#12592#0" expanded="true" />
+                <element signature="e#12657#12658#0" expanded="true" />
+                <element signature="e#12709#12710#0" expanded="true" />
+                <element signature="e#12779#12780#0" expanded="true" />
+                <element signature="e#12831#12832#0" expanded="true" />
+                <element signature="e#12897#12898#0" expanded="true" />
+                <element signature="e#12949#12950#0" expanded="true" />
+                <element signature="e#14919#14920#0" expanded="true" />
+                <element signature="e#14965#14966#0" expanded="true" />
+                <element signature="e#15242#15243#0" expanded="true" />
+                <element signature="e#15288#15289#0" expanded="true" />
+                <element signature="e#15567#15568#0" expanded="true" />
+                <element signature="e#15613#15614#0" expanded="true" />
+                <element signature="e#15937#15938#0" expanded="true" />
+                <element signature="e#15983#15984#0" expanded="true" />
+                <element signature="e#16049#16050#0" expanded="true" />
+                <element signature="e#16099#16100#0" expanded="true" />
+                <element signature="e#16146#16147#0" expanded="true" />
+                <element signature="e#16192#16193#0" expanded="true" />
+                <element signature="e#16469#16470#0" expanded="true" />
+                <element signature="e#16515#16516#0" expanded="true" />
+                <element signature="e#16794#16795#0" expanded="true" />
+                <element signature="e#16840#16841#0" expanded="true" />
+                <element signature="e#17144#17145#0" expanded="true" />
+                <element signature="e#17194#17195#0" expanded="true" />
+                <element signature="e#17280#17281#0" expanded="true" />
+                <element signature="e#17330#17331#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,6 +201,18 @@
       <find>Function&lt;Integer, Integer&gt;</find>
       <find>fromIndex</find>
       <find>toIndex</find>
+      <find>double</find>
+      <find>long</find>
+      <find>int</find>
+      <find>Double</find>
+      <find>xx</find>
+      <find>Byte</find>
+      <find>applyAsBoolean</find>
+      <find>Boolean</find>
+      <find>boolean</find>
+      <find>char</find>
+      <find>short</find>
+      <find>foldl</find>
     </findStrings>
     <replaceStrings>
       <replace>a</replace>
@@ -182,6 +233,13 @@
       <replace>IntUnaryOperator</replace>
       <replace>from</replace>
       <replace>to</replace>
+      <replace>double</replace>
+      <replace>y</replace>
+      <replace>Boolean</replace>
+      <replace>Char</replace>
+      <replace>char</replace>
+      <replace>short</replace>
+      <replace>float</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -196,57 +254,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/data_structures/exceptions/EmptyGraphException.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/exceptions/EmptyHashTableException.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/exceptions/EmptyTreeException.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/sorting/RunningMedian.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/sorting/RadixSortStringsLSD.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/sorting/RadixSortStringsMSD.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/range_structures/BinaryIndexedTree.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/trees/AncestorsSparseTable.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/range_structures/SegmentTree.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/flows_matchings/HungarianAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/SparseTableOrig.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/SparseTableAggregate.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/SparseTable.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/strings/KMP.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/sorting/ThreeWayQuickSortStrings.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/interfaces/iPriorityQueue.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/priority_queues/MeldableHeap.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/exceptions/CharacterNotInTheAlphabetException.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/strings/Trie.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/strings/ZAlgorithm.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/strings/KnuthMorrisPratt.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/interfaces/iTrie.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/interfaces/iTrieMap.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/strings/HashTrie.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/flows_matchings/StableMarriage.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/UnionFind.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/priority_queues/BinaryHeap.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/AlgorithmsTest.java" />
-        <option value="$PROJECT_DIR$/src/test/algorithms/AlgorithmsTest.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/Algorithms.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/AlgorithmsOnRanges.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/divide_conquer/NumberOfInversions.java" />
-        <option value="$PROJECT_DIR$/src/test/algorithms/divide_conquer/NumberOfInversionsTest.java" />
-        <option value="$PROJECT_DIR$/src/test/NumberOfInversionsTest.java" />
-        <option value="$PROJECT_DIR$/src/interview_questions/MajorityElementTest.java" />
-        <option value="$PROJECT_DIR$/src/interview_questions/MajorityElement.java" />
-        <option value="$PROJECT_DIR$/src/test/MajorityElementTest.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/combinatorics/Factorial.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/flows_matchings/PushRelabel.java" />
-        <option value="$PROJECT_DIR$/test/NumberOfInversionsTest.java" />
-        <option value="$PROJECT_DIR$/test/MajorityElementTest.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/combinatorics/Combinations.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/TupleDouble.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/TupleShort.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/TupleLong.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/TupleInt.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/TupleChar.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/Tuple.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/TupleIterator.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/tuple/TupleShort.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/tuple/Tuple.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleIntIterator.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleIterator.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/tuple/TupleInt.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleLongIterator.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleCharIterator.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleDoubleIterator.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/tuple/TupleChar.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/tuple/TupleDouble.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/tuple/TupleLong.java" />
+        <option value="$PROJECT_DIR$/test/test/algorithms/BinaryExponentiationTest.java" />
+        <option value="$PROJECT_DIR$/test/BinaryExponentiationTest.java" />
         <option value="$PROJECT_DIR$/src/algorithms/number_theory/ModularInverse.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/number_theory/ModularArithmetics.java" />
         <option value="$PROJECT_DIR$/src/algorithms/number_theory/ModularArithmetic.java" />
         <option value="$PROJECT_DIR$/src/algorithms/number_theory/BinaryExponentiation.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/number_theory/PrimalityTesting.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/number_theory/SieveOfEratosthenes.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/number_theory/EulerTotientFunction.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/number_theory/GreatestCommonDivisor.java" />
+        <option value="$PROJECT_DIR$/test/algorithms/number_theory/PrimeFactorizationTest.java" />
+        <option value="$PROJECT_DIR$/test/PrimeFactorizationTest.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/number_theory/PrimeFactorization.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/BoxUnboxArrays.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/ArrayBoxingUnboxing.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/arrays/ArrayAlgorithms.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/arrays/ArrayBoxingUnboxing.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/number_theory/Primality.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/number_theory/NumberOfDivisors.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/ByteBinaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/BooleanBinaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/CharBinaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/ShortBinaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/FloatBinaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/BooleanBinaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/ByteBinaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/CharBinaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/ShortBinaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/ByteUnaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/BooleanUnaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/CharUnaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/ShortUnaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/FloatUnaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/FloatBinaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/stream/ByteStream.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/optional/ByteOptional.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/Functional.java" />
       </list>
     </option>
   </component>
@@ -257,10 +315,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1" />
+    <option name="x" value="-2" />
     <option name="y" value="-4" />
     <option name="width" value="1922" />
-    <option name="height" value="1085" />
+    <option name="height" value="1078" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -303,7 +361,22 @@
               <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="algorithms" type="462c0819:PsiDirectoryNode" />
-              <item name="combinatorics" type="462c0819:PsiDirectoryNode" />
+              <item name="arrays" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="functional" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="functional" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
@@ -321,16 +394,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/guava-23.0.jar!/" />
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -341,17 +414,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="algorithms.number_theory" />
+      <recent name="test.algorithms" />
       <recent name="interview_questions" />
       <recent name="test.algorithms.divide_conquer" />
-      <recent name="test.algorithms" />
       <recent name="algorithms" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="C:\Users\alex\IdeaProjects\Prometheus\src\algorithms\geometry" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -360,6 +427,22 @@
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/test" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="algorithms.functional.interfaces" />
+      <recent name="algorithms.functional" />
+      <recent name="data_structures.tuple.iterators" />
+      <recent name="data_structures.pair" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="C:\Users\alex\IdeaProjects\Prometheus\src\algorithms\geometry" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="data_structures.pair" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -375,56 +458,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="AlgorithmsTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.algorithms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Prometheus" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.algorithms" />
-      <option name="MAIN_CLASS_NAME" value="test.algorithms.AlgorithmsTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="AlgorithmsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="algorithms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Prometheus" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="algorithms" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.AlgorithmsTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="All in Prometheus" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Prometheus" />
@@ -437,6 +470,26 @@
       <option name="VM_PARAMETERS" value="" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="BinaryExponentiationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Prometheus" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BinaryExponentiationTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -486,18 +539,38 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="NumberOfInversionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PrimeFactorizationTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Prometheus" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PrimeFactorizationTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="PrimeFactorizationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="test.algorithms.divide_conquer.*" />
+          <option name="PATTERN" value="algorithms.number_theory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="Prometheus" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.algorithms.divide_conquer" />
-      <option name="MAIN_CLASS_NAME" value="test.algorithms.divide_conquer.NumberOfInversionsTest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.number_theory.PrimeFactorizationTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
@@ -931,18 +1004,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.All in Prometheus" />
       <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AlgorithmsTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AlgorithmsTest (1)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.NumberOfInversionsTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.MajorityElementTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MajorityElementTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BinaryExponentiationTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PrimeFactorizationTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PrimeFactorizationTest (1)" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MajorityElementTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.NumberOfInversionsTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AlgorithmsTest (1)" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.AlgorithmsTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PrimeFactorizationTest (1)" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PrimeFactorizationTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BinaryExponentiationTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MajorityElementTest" />
       </list>
     </recent_temporary>
   </component>
@@ -972,7 +1045,8 @@
       <workItem from="1504198040325" duration="6826000" />
       <workItem from="1504211173591" duration="7087000" />
       <workItem from="1504441652468" duration="98000" />
-      <workItem from="1504441811522" duration="8872000" />
+      <workItem from="1504441811522" duration="8883000" />
+      <workItem from="1504461381150" duration="28626000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1492409929192</created>
@@ -1142,46 +1216,53 @@
       <option name="project" value="LOCAL" />
       <updated>1504450982155</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="add mod arit">
+      <created>1504451143549</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1504451143549</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Prometheus - 2017.09.01 at 09h 22m 38s.xml">
-      <configuration name="All in Prometheus" configurationId="JUnit" />
+    <history-entry file="BinaryExponentiationTest - 2017.09.04 at 14h 34m 27s.xml">
+      <configuration name="BinaryExponentiationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_Prometheus - 2017.09.03 at 17h 01m 50s.xml">
-      <configuration name="All in Prometheus" configurationId="JUnit" />
+    <history-entry file="PrimeFactorizationTest - 2017.09.04 at 15h 07m 56s.xml">
+      <configuration name="PrimeFactorizationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MajorityElementTest - 2017.09.01 at 00h 17m 20s.xml">
-      <configuration name="MajorityElementTest" configurationId="JUnit" />
+    <history-entry file="PrimeFactorizationTest - 2017.09.04 at 15h 08m 23s.xml">
+      <configuration name="PrimeFactorizationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MajorityElementTest - 2017.09.01 at 00h 17m 44s.xml">
-      <configuration name="MajorityElementTest" configurationId="JUnit" />
+    <history-entry file="PrimeFactorizationTest - 2017.09.04 at 15h 08m 28s.xml">
+      <configuration name="PrimeFactorizationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MajorityElementTest - 2017.09.01 at 00h 18m 02s.xml">
-      <configuration name="MajorityElementTest" configurationId="JUnit" />
+    <history-entry file="PrimeFactorizationTest - 2017.09.04 at 15h 08m 50s.xml">
+      <configuration name="PrimeFactorizationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MajorityElementTest - 2017.09.01 at 00h 18m 24s.xml">
-      <configuration name="MajorityElementTest" configurationId="JUnit" />
+    <history-entry file="PrimeFactorizationTest - 2017.09.04 at 15h 12m 17s.xml">
+      <configuration name="PrimeFactorizationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MajorityElementTest - 2017.09.01 at 00h 18m 56s.xml">
-      <configuration name="MajorityElementTest" configurationId="JUnit" />
+    <history-entry file="PrimeFactorizationTest - 2017.09.04 at 15h 16m 29s.xml">
+      <configuration name="PrimeFactorizationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MajorityElementTest - 2017.09.01 at 00h 19m 56s.xml">
-      <configuration name="MajorityElementTest" configurationId="JUnit" />
+    <history-entry file="PrimeFactorizationTest_(1) - 2017.09.04 at 15h 16m 35s.xml">
+      <configuration name="PrimeFactorizationTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MajorityElementTest - 2017.09.01 at 00h 20m 12s.xml">
-      <configuration name="MajorityElementTest" configurationId="JUnit" />
+    <history-entry file="PrimeFactorizationTest_(1) - 2017.09.04 at 15h 16m 56s.xml">
+      <configuration name="PrimeFactorizationTest (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MajorityElementTest - 2017.09.01 at 09h 22m 09s.xml">
-      <configuration name="MajorityElementTest" configurationId="JUnit" />
+    <history-entry file="PrimeFactorizationTest_(1) - 2017.09.04 at 15h 18m 00s.xml">
+      <configuration name="PrimeFactorizationTest (1)" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98289000" />
+    <option name="totallyTimeSpent" value="126926000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1922" height="1092" extended-state="6" />
+    <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1192,28 +1273,59 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.50426894" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.49573106" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32670158" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.49573106" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21237993" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2145144" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.50426894" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670158" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.49573106" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2145144" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1247,252 +1359,136 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/interview_questions/FindAllSubarraysWithZeroSum.java">
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/Iterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="773">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/trees/AncestorsSparseTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/binary_search_trees/nodes/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="189" column="67" lean-forward="false" selection-start-line="189" selection-start-column="66" selection-end-line="189" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="1232" column="22" lean-forward="false" selection-start-line="1232" selection-start-column="22" selection-end-line="1232" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/interfaces/iPriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/CharSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-446">
-          <caret line="58" column="17" lean-forward="false" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/util/function/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/exceptions/CharacterNotInTheAlphabetException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/strings/ZAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/binary_search_trees/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2178">
-          <caret line="179" column="2" lean-forward="false" selection-start-line="179" selection-start-column="0" selection-end-line="184" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/flows_matchings/HungarianAlgorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/strings/HashTrie.java" />
-    <entry file="file://$PROJECT_DIR$/src/algorithms/strings/Trie.java" />
-    <entry file="file://$PROJECT_DIR$/src/algorithms/strings/KnuthMorrisPratt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/UnionFind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-311">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="126">
-            <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/priority_queues/MeldableHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="103" column="5" lean-forward="false" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/interfaces/iTrieMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/interfaces/iStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/interfaces/iSortedMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/interfaces/iQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/Main.java" />
-    <entry file="file://$PROJECT_DIR$/test/algorithms/Algorithms.java" />
-    <entry file="file://$PROJECT_DIR$/test/algorithms/AlgorithmsTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/AlgorithmsTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/algorithms/AlgorithmsTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/data_structures/priority_queues/BinaryHeap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Prometheus.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/AlgorithmsOnRanges.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2034">
-          <caret line="128" column="5" lean-forward="false" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
-          <folding>
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#797#798#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#2623#2624#0" expanded="true" />
-            <element signature="e#2680#2681#0" expanded="true" />
-            <element signature="e#3259#3260#0" expanded="true" />
-            <element signature="e#3330#3331#0" expanded="true" />
-            <element signature="e#4111#4112#0" expanded="true" />
-            <element signature="e#4166#4167#0" expanded="true" />
-            <element signature="e#4237#4238#0" expanded="true" />
-            <element signature="e#4277#4278#0" expanded="true" />
-            <element signature="e#5124#5125#0" expanded="true" />
-            <element signature="e#5176#5177#0" expanded="true" />
-            <element signature="e#5221#5222#0" expanded="true" />
-            <element signature="e#5263#5264#0" expanded="true" />
-            <element signature="e#5325#5326#0" expanded="true" />
-            <element signature="e#5377#5378#0" expanded="true" />
-            <element signature="e#7304#7305#0" expanded="true" />
-            <element signature="e#7361#7362#0" expanded="true" />
-            <element signature="e#9572#9573#0" expanded="true" />
-            <element signature="e#9623#9624#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="524" column="30" lean-forward="false" selection-start-line="524" selection-start-column="30" selection-end-line="524" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/MajorityElementTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="-615">
+          <caret line="57" column="17" lean-forward="false" selection-start-line="57" selection-start-column="17" selection-end-line="57" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/divide_conquer/NumberOfInversions.java">
+    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/TupleLong.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="414">
+          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#488#489#0" expanded="false" />
+            <element signature="e#523#524#0" expanded="false" />
+            <element signature="e#590#591#0" expanded="false" />
+            <element signature="e#640#641#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/flows_matchings/StableMarriage.java">
+    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/TupleDouble.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="414">
+          <caret line="29" column="45" lean-forward="false" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#497#498#0" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+            <element signature="e#601#602#0" expanded="false" />
+            <element signature="e#653#654#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/graphs/PrimMST.java" />
-    <entry file="file://$PROJECT_DIR$/src/algorithms/sorting/RunningMedian.java">
+    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/TupleInt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="85" lean-forward="false" selection-start-line="7" selection-start-column="85" selection-end-line="7" selection-end-column="85" />
+        <state relative-caret-position="414">
+          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#484#485#0" expanded="false" />
+            <element signature="e#519#520#0" expanded="false" />
+            <element signature="e#589#590#0" expanded="false" />
+            <element signature="e#638#639#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/flows_matchings/PushRelabel.java">
+    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/Tuple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3240">
-          <caret line="183" column="1" lean-forward="false" selection-start-line="183" selection-start-column="1" selection-end-line="183" selection-end-column="1" />
+        <state relative-caret-position="429">
+          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/TupleChar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#493#494#0" expanded="false" />
+            <element signature="e#528#529#0" expanded="false" />
+            <element signature="e#600#601#0" expanded="false" />
+            <element signature="e#650#651#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleIntIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/NumberOfInversionsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleLongIterator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        <state relative-caret-position="126">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleDoubleIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/iterators/TupleCharIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -1507,123 +1503,437 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/interview_questions/MajorityElement.java">
+    <entry file="file://$PROJECT_DIR$/test/BinaryExponentiationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/combinatorics/Factorial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
+        <state relative-caret-position="504">
+          <caret line="28" column="53" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/combinatorics/Combinations.java">
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="205">
+          <caret line="1895" column="25" lean-forward="false" selection-start-line="1895" selection-start-column="25" selection-end-line="1895" selection-end-column="25" />
           <folding>
-            <element signature="e#131#132#0" expanded="true" />
-            <element signature="e#175#176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-281">
-          <caret line="195" column="13" lean-forward="false" selection-start-line="195" selection-start-column="13" selection-end-line="195" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/BinaryExponentiation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#1717#1718#0" expanded="true" />
-            <element signature="e#1756#1757#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/ModularArithmetic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2826">
-          <caret line="157" column="39" lean-forward="false" selection-start-line="157" selection-start-column="39" selection-end-line="157" selection-end-column="39" />
-          <folding>
-            <element signature="e#1898#1899#0" expanded="true" />
-            <element signature="e#1949#1950#0" expanded="true" />
-            <element signature="e#2012#2013#0" expanded="true" />
-            <element signature="e#2048#2049#0" expanded="true" />
+            <element signature="e#73954#73955#0" expanded="false" />
+            <element signature="e#74025#74026#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/ModularInverse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="468">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/ModularArithmetic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="110" column="15" lean-forward="true" selection-start-line="110" selection-start-column="15" selection-end-line="110" selection-end-column="15" />
+          <folding>
+            <element signature="e#2075#2076#0" expanded="true" />
+            <element signature="e#2111#2112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/BinaryExponentiation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/SieveOfEratosthenes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="96" column="0" lean-forward="true" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/GreatestCommonDivisor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-702">
+          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/PrimeFactorization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="107" column="20" lean-forward="false" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="1121" column="15" lean-forward="false" selection-start-line="1121" selection-start-column="15" selection-end-line="1121" selection-end-column="15" />
+          <folding>
+            <element signature="e#43663#43664#0" expanded="false" />
+            <element signature="e#43691#43692#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/lang/Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="732" column="18" lean-forward="false" selection-start-line="732" selection-start-column="18" selection-end-line="732" selection-end-column="18" />
+          <folding>
+            <element signature="e#27871#27872#0" expanded="false" />
+            <element signature="e#27899#27900#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/PrimeFactorizationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/EulerTotientFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/NumberOfDivisors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/Primality.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="92" column="69" lean-forward="false" selection-start-line="92" selection-start-column="69" selection-end-line="92" selection-end-column="69" />
+        <state relative-caret-position="1818">
+          <caret line="101" column="5" lean-forward="false" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
           <folding>
-            <element signature="e#2474#2475#0" expanded="true" />
-            <element signature="e#2524#2525#0" expanded="true" />
+            <element signature="e#2474#2475#0" expanded="false" />
+            <element signature="e#2524#2525#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/SieveOfEratosthenes.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/arrays/ArrayAlgorithms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1299">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="-4175">
+          <caret line="87" column="10" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="40" lean-forward="false" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/function/IntBinaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/function/IntUnaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="94" selection-end-column="1" />
+          <folding>
+            <element signature="e#2603#2604#0" expanded="false" />
+            <element signature="e#2632#2633#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/ShortUnaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <marker date="1504549574630" expanded="false" signature="1973:1984" ph=" { " />
+            <marker date="1504549574630" expanded="false" signature="1998:2004" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/ShortBinaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/CharUnaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <marker date="1504549550906" expanded="false" signature="1958:1969" ph=" { " />
+            <marker date="1504549550906" expanded="false" signature="1983:1989" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/BooleanUnaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding>
+            <marker date="1504549462013" expanded="false" signature="2003:2014" ph=" { " />
+            <marker date="1504549462013" expanded="false" signature="2028:2034" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/ByteUnaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+          <folding>
+            <element signature="e#1959#1960#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/BooleanBinaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/ByteBinaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/CharBinaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/FloatBinaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/FloatUnaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/commons-lang3-3.6/commons-lang3-3.6-sources.jar!/org/apache/commons/lang3/ArrayUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3877">
+          <caret line="1100" column="25" lean-forward="false" selection-start-line="1100" selection-start-column="25" selection-end-line="1100" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="5608" column="32" lean-forward="false" selection-start-line="5608" selection-start-column="32" selection-end-line="5608" selection-end-column="32" />
+          <folding>
+            <element signature="e#249749#249750#0" expanded="false" />
+            <element signature="e#249802#249803#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/arrays/ArrayBoxingUnboxing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="67" column="5" lean-forward="false" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1885#1886#0" expanded="false" />
+            <element signature="e#1941#1942#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/stream/BaseStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1407">
+          <caret line="63" column="17" lean-forward="false" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/stream/IntStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18939">
+          <caret line="72" column="45" lean-forward="false" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stream/ByteStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/OptionalInt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-437">
+          <caret line="55" column="19" lean-forward="false" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/optional/ByteOptional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="992" column="16" lean-forward="false" selection-start-line="992" selection-start-column="16" selection-end-line="992" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="148" column="13" lean-forward="false" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/Functional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="618" column="0" lean-forward="true" selection-start-line="618" selection-start-column="0" selection-end-line="618" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2526#2527#0" expanded="true" />
-            <element signature="e#2571#2572#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="432" column="69" lean-forward="true" selection-start-line="432" selection-start-column="69" selection-end-line="432" selection-end-column="69" />
-          <folding>
-            <element signature="e#17080#17081#0" expanded="true" />
-            <element signature="e#17162#17163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/NumberOfDivisors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-525">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#6256#6286#0" expanded="true" />
+            <element signature="e#6666#6667#0" expanded="true" />
+            <element signature="e#6718#6719#0" expanded="true" />
+            <element signature="e#6829#6830#0" expanded="true" />
+            <element signature="e#6881#6882#0" expanded="true" />
+            <element signature="e#6986#6987#0" expanded="true" />
+            <element signature="e#7038#7039#0" expanded="true" />
+            <element signature="e#7141#7142#0" expanded="true" />
+            <element signature="e#7193#7194#0" expanded="true" />
+            <element signature="e#7300#7301#0" expanded="true" />
+            <element signature="e#7352#7353#0" expanded="true" />
+            <element signature="e#7457#7458#0" expanded="true" />
+            <element signature="e#7509#7510#0" expanded="true" />
+            <element signature="e#7616#7617#0" expanded="true" />
+            <element signature="e#7668#7669#0" expanded="true" />
+            <element signature="e#7777#7778#0" expanded="true" />
+            <element signature="e#7829#7830#0" expanded="true" />
+            <element signature="e#7949#7950#0" expanded="true" />
+            <element signature="e#8001#8002#0" expanded="true" />
+            <element signature="e#8106#8107#0" expanded="true" />
+            <element signature="e#8174#8175#0" expanded="true" />
+            <element signature="e#8285#8286#0" expanded="true" />
+            <element signature="e#8353#8354#0" expanded="true" />
+            <element signature="e#8458#8459#0" expanded="true" />
+            <element signature="e#8526#8527#0" expanded="true" />
+            <element signature="e#8633#8634#0" expanded="true" />
+            <element signature="e#8701#8702#0" expanded="true" />
+            <element signature="e#8804#8805#0" expanded="true" />
+            <element signature="e#8872#8873#0" expanded="true" />
+            <element signature="e#8977#8978#0" expanded="true" />
+            <element signature="e#9045#9046#0" expanded="true" />
+            <element signature="e#9152#9153#0" expanded="true" />
+            <element signature="e#9220#9221#0" expanded="true" />
+            <element signature="e#9329#9330#0" expanded="true" />
+            <element signature="e#9397#9398#0" expanded="true" />
+            <element signature="e#9517#9518#0" expanded="true" />
+            <element signature="e#9585#9586#0" expanded="true" />
+            <element signature="e#11528#11529#0" expanded="true" />
+            <element signature="e#11588#11589#0" expanded="true" />
+            <element signature="e#11651#11652#0" expanded="true" />
+            <element signature="e#11711#11712#0" expanded="true" />
+            <element signature="e#11780#11781#0" expanded="true" />
+            <element signature="e#11840#11841#0" expanded="true" />
+            <element signature="e#11847#11877#0" expanded="true" />
+            <element signature="e#11935#11936#0" expanded="true" />
+            <element signature="e#12001#12002#0" expanded="true" />
+            <element signature="e#12065#12066#0" expanded="true" />
+            <element signature="e#12117#12118#0" expanded="true" />
+            <element signature="e#12183#12184#0" expanded="true" />
+            <element signature="e#12235#12236#0" expanded="true" />
+            <element signature="e#12305#12306#0" expanded="true" />
+            <element signature="e#12357#12358#0" expanded="true" />
+            <element signature="e#12423#12424#0" expanded="true" />
+            <element signature="e#12475#12476#0" expanded="true" />
+            <element signature="e#12539#12540#0" expanded="true" />
+            <element signature="e#12591#12592#0" expanded="true" />
+            <element signature="e#12657#12658#0" expanded="true" />
+            <element signature="e#12709#12710#0" expanded="true" />
+            <element signature="e#12779#12780#0" expanded="true" />
+            <element signature="e#12831#12832#0" expanded="true" />
+            <element signature="e#12897#12898#0" expanded="true" />
+            <element signature="e#12949#12950#0" expanded="true" />
+            <element signature="e#14919#14920#0" expanded="true" />
+            <element signature="e#14965#14966#0" expanded="true" />
+            <element signature="e#15242#15243#0" expanded="true" />
+            <element signature="e#15288#15289#0" expanded="true" />
+            <element signature="e#15567#15568#0" expanded="true" />
+            <element signature="e#15613#15614#0" expanded="true" />
+            <element signature="e#15937#15938#0" expanded="true" />
+            <element signature="e#15983#15984#0" expanded="true" />
+            <element signature="e#16049#16050#0" expanded="true" />
+            <element signature="e#16099#16100#0" expanded="true" />
+            <element signature="e#16146#16147#0" expanded="true" />
+            <element signature="e#16192#16193#0" expanded="true" />
+            <element signature="e#16469#16470#0" expanded="true" />
+            <element signature="e#16515#16516#0" expanded="true" />
+            <element signature="e#16794#16795#0" expanded="true" />
+            <element signature="e#16840#16841#0" expanded="true" />
+            <element signature="e#17144#17145#0" expanded="true" />
+            <element signature="e#17194#17195#0" expanded="true" />
+            <element signature="e#17280#17281#0" expanded="true" />
+            <element signature="e#17330#17331#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1686,7 +1996,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

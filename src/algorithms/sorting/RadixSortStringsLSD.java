@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import algorithms.AlgorithmsOnRanges;
+import algorithms.arrays.ArrayAlgorithms;
 
 import java.util.Arrays;
 
@@ -18,7 +18,7 @@ public class RadixSortStringsLSD {
 
             for (String anArray : array) count[anArray.charAt(d) + 1]++;
 
-            AlgorithmsOnRanges.partialSum(count, 0, RADIX + 1);
+            ArrayAlgorithms.partialSum(count, 0, RADIX + 1);
 
             for (String anArray : array) aux[count[anArray.charAt(d)]++] = anArray;
 

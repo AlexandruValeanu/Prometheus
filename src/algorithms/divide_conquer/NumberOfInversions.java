@@ -1,8 +1,6 @@
 package algorithms.divide_conquer;
 
-import algorithms.AlgorithmsOnRanges;
-
-import java.util.Arrays;
+import algorithms.arrays.ArrayAlgorithms;
 
 public class NumberOfInversions {
     private NumberOfInversions(){}
@@ -19,7 +17,7 @@ public class NumberOfInversions {
         int[] A = new int[n];
         int[] B = new int[n];
 
-        AlgorithmsOnRanges.copy(array, from, n, A, 0);
+        ArrayAlgorithms.copy(array, from, n, A, 0);
 
         return mergeSortCount(A, 0, n - 1, B);
     }
