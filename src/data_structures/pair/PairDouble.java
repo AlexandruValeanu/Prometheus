@@ -1,8 +1,10 @@
 package data_structures.pair;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Objects;
 
-public class PairDouble {
+public class PairDouble implements Comparable<PairDouble> {
     double first;
     double second;
 
@@ -30,6 +32,16 @@ public class PairDouble {
 
     public void setSecond(double second) {
         this.second = second;
+    }
+
+    @Override
+    public int compareTo(@NotNull PairDouble o) {
+        int c = Double.compare(first, o.first);
+
+        if (c != 0)
+            return c;
+        else
+            return Double.compare(second, o.second);
     }
 
     @Override

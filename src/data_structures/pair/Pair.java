@@ -35,7 +35,6 @@ public class Pair<E1, E2> {
         this.second = second;
     }
 
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

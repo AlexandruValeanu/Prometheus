@@ -1,8 +1,10 @@
 package data_structures.pair;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Objects;
 
-public class PairChar {
+public class PairChar implements Comparable<PairChar> {
     char first;
     char second;
 
@@ -30,6 +32,16 @@ public class PairChar {
 
     public void setSecond(char second) {
         this.second = second;
+    }
+
+    @Override
+    public int compareTo(@NotNull PairChar o) {
+        int c = Character.compare(first, o.first);
+
+        if (c != 0)
+            return c;
+        else
+            return Character.compare(second, o.second);
     }
 
     @Override

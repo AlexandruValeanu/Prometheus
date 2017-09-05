@@ -1,8 +1,10 @@
 package data_structures.pair;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Objects;
 
-public class PairLong {
+public class PairLong implements Comparable<PairLong> {
     long first;
     long second;
 
@@ -30,6 +32,16 @@ public class PairLong {
 
     public void setSecond(long second) {
         this.second = second;
+    }
+
+    @Override
+    public int compareTo(@NotNull PairLong o) {
+        int c = Long.compare(first, o.first);
+
+        if (c != 0)
+            return c;
+        else
+            return Long.compare(second, o.second);
     }
 
     @Override

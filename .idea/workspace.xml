@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf4b95b-0154-4b6c-9a0e-0c73677bff79" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Prometheus/Main.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairBoolean.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairByte.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairFloat.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairShort.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/tuple/Tuple.java" afterPath="$PROJECT_DIR$/src/data_structures/tuple/Tuple.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/tuple/TupleBoolean.java" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleBoolean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/tuple/TupleByte.java" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleByte.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/tuple/TupleChar.java" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleChar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/tuple/TupleDouble.java" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleDouble.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/tuple/TupleFloat.java" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleFloat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/tuple/TupleInt.java" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleInt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/tuple/TupleLong.java" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleLong.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/tuple/TupleShort.java" afterPath="$PROJECT_DIR$/src/data_structures/tuple/TupleShort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/pair/Pair.java" afterPath="$PROJECT_DIR$/src/data_structures/pair/Pair.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/pair/PairChar.java" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairChar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/pair/PairDouble.java" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairDouble.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/pair/PairInt.java" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairInt.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/pair/PairLong.java" afterPath="$PROJECT_DIR$/src/data_structures/pair/PairLong.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,99 +23,165 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="198">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Arrays.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/Arrays.java">
+      <file leaf-file-name="Pair.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/pair/Pair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="5978" column="22" lean-forward="false" selection-start-line="5978" selection-start-column="22" selection-end-line="5978" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TupleChar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/TupleChar.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#903#904#0" expanded="true" />
-                <element signature="e#956#957#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tuple.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/Tuple.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TupleBoolean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/TupleBoolean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="71" column="10" lean-forward="false" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TupleByte.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/TupleByte.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TupleLong.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/TupleLong.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
+            <state relative-caret-position="486">
               <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairChar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairChar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#631#632#0" expanded="true" />
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TupleShort.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/TupleShort.java">
+      <file leaf-file-name="PairDouble.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairDouble.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+            <state relative-caret-position="108">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#900#901#0" expanded="true" />
-                <element signature="e#953#954#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairLong.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairLong.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairFloat.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairFloat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <marker date="1504606361670" expanded="false" signature="1208:1219" ph=" { " />
+                <marker date="1504606361670" expanded="false" signature="1254:1260" ph=" }" />
+                <marker date="1504606361670" expanded="false" signature="1304:1315" ph=" { " />
+                <marker date="1504606361670" expanded="false" signature="1343:1349" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairInt.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairInt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairByte.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairByte.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#410#411#0" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+                <element signature="e#478#479#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#543#544#0" expanded="true" />
+                <element signature="e#572#573#0" expanded="true" />
+                <element signature="e#614#615#0" expanded="true" />
+                <element signature="e#650#651#0" expanded="true" />
+                <marker date="1504606235214" expanded="false" signature="1191:1202" ph=" { " />
+                <marker date="1504606235214" expanded="false" signature="1237:1243" ph=" }" />
+                <marker date="1504606235214" expanded="false" signature="1287:1298" ph=" { " />
+                <marker date="1504606235214" expanded="false" signature="1326:1332" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairBoolean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairBoolean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#445#446#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#694#695#0" expanded="true" />
+                <element signature="e#1347#1348#0" expanded="true" />
+                <element signature="e#1390#1391#0" expanded="true" />
+                <marker date="1504606573367" expanded="false" signature="1250:1261" ph=" { " />
+                <marker date="1504606573367" expanded="false" signature="1296:1302" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PairShort.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairShort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="42" column="12" lean-forward="true" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#522#523#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#1209#1210#0" expanded="true" />
+                <element signature="e#1259#1260#0" expanded="true" />
+                <marker date="1504606465364" expanded="false" signature="1304:1315" ph=" { " />
+                <marker date="1504606465364" expanded="false" signature="1343:1349" ph=" }" />
               </folding>
             </state>
           </provider>
@@ -139,8 +202,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>any_of</find>
-      <find>none_of</find>
       <find>for_each</find>
       <find>for_each_n</find>
       <find>count_if</find>
@@ -154,8 +215,6 @@
       <find>fromIndex</find>
       <find>toIndex</find>
       <find>double</find>
-      <find>long</find>
-      <find>int</find>
       <find>xx</find>
       <find>Byte</find>
       <find>applyAsBoolean</find>
@@ -169,10 +228,12 @@
       <find>Char</find>
       <find>Boolean</find>
       <find>of</find>
+      <find>long</find>
+      <find>float</find>
+      <find>byte</find>
+      <find>int</find>
     </findStrings>
     <replaceStrings>
-      <replace>c</replace>
-      <replace>allOf</replace>
       <replace>anyOf</replace>
       <replace>fo</replace>
       <replace>noneOf</replace>
@@ -191,8 +252,6 @@
       <replace>y</replace>
       <replace>Boolean</replace>
       <replace>char</replace>
-      <replace>short</replace>
-      <replace>float</replace>
       <replace>Byte</replace>
       <replace>Char</replace>
       <replace>Double</replace>
@@ -201,6 +260,10 @@
       <replace>Long</replace>
       <replace>Short</replace>
       <replace>valueOf</replace>
+      <replace>float</replace>
+      <replace>byte</replace>
+      <replace>boolean</replace>
+      <replace>short</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -215,15 +278,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/BinaryExponentiationTest.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/number_theory/ModularInverse.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/number_theory/ModularArithmetic.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/number_theory/BinaryExponentiation.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/number_theory/EulerTotientFunction.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/number_theory/GreatestCommonDivisor.java" />
-        <option value="$PROJECT_DIR$/test/algorithms/number_theory/PrimeFactorizationTest.java" />
-        <option value="$PROJECT_DIR$/test/PrimeFactorizationTest.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/number_theory/PrimeFactorization.java" />
         <option value="$PROJECT_DIR$/src/algorithms/BoxUnboxArrays.java" />
         <option value="$PROJECT_DIR$/src/algorithms/ArrayBoxingUnboxing.java" />
         <option value="$PROJECT_DIR$/src/algorithms/arrays/ArrayAlgorithms.java" />
@@ -266,6 +320,15 @@
         <option value="$PROJECT_DIR$/src/data_structures/tuple/Tuple.java" />
         <option value="$PROJECT_DIR$/src/data_structures/tuple/TupleByte.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/Pair.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/PairBoolean.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/PairByte.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/PairChar.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/PairDouble.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/PairFloat.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/PairInt.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/PairLong.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/pair/PairShort.java" />
       </list>
     </option>
   </component>
@@ -381,6 +444,13 @@
               <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data_structures" type="462c0819:PsiDirectoryNode" />
+              <item name="pair" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data_structures" type="462c0819:PsiDirectoryNode" />
               <item name="tuple" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -438,11 +508,11 @@
       <recent name="C:\Users\alex\IdeaProjects\Prometheus\src\algorithms\geometry" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="data_structures.pair" />
       <recent name="data_structures.tuple" />
       <recent name="data_structures.tuple.iterators" />
       <recent name="algorithms.functional.interfaces" />
       <recent name="algorithms.functional" />
-      <recent name="data_structures.pair" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -1052,7 +1122,7 @@
       <workItem from="1504441652468" duration="98000" />
       <workItem from="1504441811522" duration="8883000" />
       <workItem from="1504461381150" duration="29691000" />
-      <workItem from="1504595762953" duration="7032000" />
+      <workItem from="1504595762953" duration="7900000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1492409929192</created>
@@ -1250,7 +1320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504598907362</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="update tuple">
+      <created>1504602814797</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1504602814797</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1286,7 +1363,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135023000" />
+    <option name="totallyTimeSpent" value="135891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-4" width="1922" height="1092" extended-state="6" />
@@ -1389,86 +1466,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/PrimeFactorizationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/EulerTotientFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/NumberOfDivisors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-147">
-          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/number_theory/Primality.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1818">
-          <caret line="101" column="5" lean-forward="false" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
-          <folding>
-            <element signature="e#2474#2475#0" expanded="false" />
-            <element signature="e#2524#2525#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/arrays/ArrayAlgorithms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4175">
-          <caret line="87" column="10" lean-forward="false" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/function/IntBinaryOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/function/IntUnaryOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="94" selection-end-column="1" />
-          <folding>
-            <element signature="e#2603#2604#0" expanded="false" />
-            <element signature="e#2632#2633#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/ShortUnaryOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding>
-            <marker date="1504549574630" expanded="false" signature="1973:1984" ph=" { " />
-            <marker date="1504549574630" expanded="false" signature="1998:2004" ph=" }" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/ShortBinaryOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/CharUnaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1775,8 +1772,8 @@
           <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#900#901#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
+            <element signature="e#900#901#0" expanded="false" />
+            <element signature="e#953#954#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1787,8 +1784,8 @@
           <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="false" />
+            <element signature="e#956#957#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1799,10 +1796,10 @@
           <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#631#632#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="false" />
+            <element signature="e#631#632#0" expanded="false" />
+            <element signature="e#886#887#0" expanded="false" />
+            <element signature="e#939#940#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1845,9 +1842,145 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairBoolean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+            <marker date="1504606573367" expanded="false" signature="1250:1261" ph=" { " />
+            <marker date="1504606573367" expanded="false" signature="1296:1302" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairByte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#478#479#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <marker date="1504606235214" expanded="false" signature="1191:1202" ph=" { " />
+            <marker date="1504606235214" expanded="false" signature="1237:1243" ph=" }" />
+            <marker date="1504606235214" expanded="false" signature="1287:1298" ph=" { " />
+            <marker date="1504606235214" expanded="false" signature="1326:1332" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairChar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairDouble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairFloat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <marker date="1504606361670" expanded="false" signature="1208:1219" ph=" { " />
+            <marker date="1504606361670" expanded="false" signature="1254:1260" ph=" }" />
+            <marker date="1504606361670" expanded="false" signature="1304:1315" ph=" { " />
+            <marker date="1504606361670" expanded="false" signature="1343:1349" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairInt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairLong.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/PairShort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="42" column="12" lean-forward="true" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#1209#1210#0" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <marker date="1504606465364" expanded="false" signature="1304:1315" ph=" { " />
+            <marker date="1504606465364" expanded="false" signature="1343:1349" ph=" }" />
+          </folding>
         </state>
       </provider>
     </entry>

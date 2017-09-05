@@ -4,51 +4,51 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
 
-public class PairInt implements Comparable<PairInt> {
-    int first;
-    int second;
+public class PairBoolean implements Comparable<PairBoolean> {
+    boolean first;
+    boolean second;
 
-    public PairInt() {
-        this.first = 0;
-        this.second = 0;
+    public PairBoolean() {
+        this.first = false;
+        this.second = false;
     }
 
-    public PairInt(int first, int second) {
+    public PairBoolean(boolean first, boolean second) {
         this.first = first;
         this.second = second;
     }
 
-    public int getFirst() {
+    public boolean getFirst() {
         return first;
     }
 
-    public void setFirst(int first) {
+    public void setFirst(boolean first) {
         this.first = first;
     }
 
-    public int getSecond() {
+    public boolean getSecond() {
         return second;
     }
 
-    public void setSecond(int second) {
+    public void setSecond(boolean second) {
         this.second = second;
     }
 
     @Override
-    public int compareTo(@NotNull PairInt o) {
-        int c = Integer.compare(first, o.first);
+    public int compareTo(@NotNull PairBoolean o) {
+        int c = Boolean.compare(first, o.first);
 
         if (c != 0)
             return c;
         else
-            return Integer.compare(second, o.second);
+            return Boolean.compare(second, o.second);
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        PairInt pair = (PairInt) o;
+        PairBoolean pair = (PairBoolean) o;
         return first == pair.first &&
                 second == pair.second;
     }
