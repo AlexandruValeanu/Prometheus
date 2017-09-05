@@ -1,15 +1,15 @@
 package data_structures.tuple.iterators;
 
-import data_structures.tuple.Tuple;
+import data_structures.tuple.TupleChar;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class TupleIterator<E> implements Iterator<E> {
-    private final Tuple<E> tuple;
+public class TupleIteratorChar implements Iterator<Character> {
+    private final TupleChar tuple;
     private int p;
 
-    public TupleIterator(Tuple<E> tuple) {
+    public TupleIteratorChar(TupleChar tuple) {
         this.tuple = tuple;
         this.p = 0;
     }
@@ -20,7 +20,7 @@ public class TupleIterator<E> implements Iterator<E> {
     }
 
     @Override
-    public E next() {
+    public Character next() {
         if (this.hasNext()){
             return tuple.get(p++);
         }

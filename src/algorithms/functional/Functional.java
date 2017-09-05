@@ -753,4 +753,6 @@ public class Functional {
     public static <T> Optional<T> min(Comparator<T> comp, T... xs){
         return Arrays.stream(xs).min(comp);
     }
+
+
 }

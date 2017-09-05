@@ -1,15 +1,15 @@
 package data_structures.tuple.iterators;
 
-import data_structures.tuple.Tuple;
+import data_structures.tuple.TupleFloat;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class TupleIterator<E> implements Iterator<E> {
-    private final Tuple<E> tuple;
+public class TupleIteratorFloat implements Iterator<Float> {
+    private final TupleFloat tuple;
     private int p;
 
-    public TupleIterator(Tuple<E> tuple) {
+    public TupleIteratorFloat(TupleFloat tuple) {
         this.tuple = tuple;
         this.p = 0;
     }
@@ -20,7 +20,7 @@ public class TupleIterator<E> implements Iterator<E> {
     }
 
     @Override
-    public E next() {
+    public Float next() {
         if (this.hasNext()){
             return tuple.get(p++);
         }

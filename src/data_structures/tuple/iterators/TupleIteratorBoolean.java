@@ -1,15 +1,16 @@
 package data_structures.tuple.iterators;
 
-import data_structures.tuple.Tuple;
+import data_structures.tuple.TupleBoolean;
+import data_structures.tuple.TupleByte;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class TupleIterator<E> implements Iterator<E> {
-    private final Tuple<E> tuple;
+public class TupleIteratorBoolean implements Iterator<Boolean> {
+    private final TupleBoolean tuple;
     private int p;
 
-    public TupleIterator(Tuple<E> tuple) {
+    public TupleIteratorBoolean(TupleBoolean tuple) {
         this.tuple = tuple;
         this.p = 0;
     }
@@ -20,7 +21,7 @@ public class TupleIterator<E> implements Iterator<E> {
     }
 
     @Override
-    public E next() {
+    public Boolean next() {
         if (this.hasNext()){
             return tuple.get(p++);
         }

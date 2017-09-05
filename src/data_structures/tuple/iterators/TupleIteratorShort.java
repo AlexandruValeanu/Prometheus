@@ -1,26 +1,27 @@
 package data_structures.tuple.iterators;
 
 import data_structures.tuple.TupleInt;
+import data_structures.tuple.TupleShort;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class TupleIntIterator implements Iterator<Integer> {
-    private final TupleInt tuple;
+public class TupleIteratorShort implements Iterator<Short> {
+    private final TupleShort tuple;
     private int p;
 
-    public TupleIntIterator(TupleInt tuple) {
+    public TupleIteratorShort(TupleShort tuple) {
         this.tuple = tuple;
         this.p = 0;
     }
 
     @Override
     public boolean hasNext() {
-        return p < tuple.length();
+        return p < tuple.length;
     }
 
     @Override
-    public Integer next() {
+    public Short next() {
         if (this.hasNext()){
             return tuple.get(p++);
         }

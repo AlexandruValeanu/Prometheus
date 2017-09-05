@@ -1,26 +1,26 @@
 package data_structures.tuple.iterators;
 
-import data_structures.tuple.TupleLong;
+import data_structures.tuple.TupleInt;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class TupleLongIterator implements Iterator<Long> {
-    private final TupleLong tuple;
+public class TupleIteratorInt implements Iterator<Integer> {
+    private final TupleInt tuple;
     private int p;
 
-    public TupleLongIterator(TupleLong tuple) {
+    public TupleIteratorInt(TupleInt tuple) {
         this.tuple = tuple;
         this.p = 0;
     }
 
     @Override
     public boolean hasNext() {
-        return p < tuple.length();
+        return p < tuple.length;
     }
 
     @Override
-    public Long next() {
+    public Integer next() {
         if (this.hasNext()){
             return tuple.get(p++);
         }
