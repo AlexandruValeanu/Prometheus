@@ -1,4 +1,4 @@
-package data_structures.tuple;
+package data_structures.tuple.mutable;
 
 import com.google.common.primitives.Shorts;
 import data_structures.tuple.iterators.TupleIteratorShort;
@@ -24,10 +24,6 @@ public class TupleShort implements Iterable<Short>, Comparable<TupleShort> {
 
     public short get(int index){
         return elems[index];
-    }
-
-    public final TupleShort add(short... elements){
-        return new TupleShort(ArrayUtils.addAll(elems, elements));
     }
 
     @Override

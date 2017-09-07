@@ -1,56 +1,47 @@
 package data_structures.pair;
 
-import java.util.Objects;
+import org.jetbrains.annotations.NotNull;
 
-/**
- * Pair (tuple of two)
- */
-public class Pair<E1, E2> {
-    E1 first;
-    E2 second;
+import java.util.Map;
 
-    public Pair(){
-        this.first = null;
-        this.second = null;
+public interface Pair<T, S> {
+
+    T getFirst();
+
+    void setFirst(T first);
+
+    S getSecond();
+
+    void setSecond(S second);
+
+    Map.Entry<T, S> toMapEntry();
+    Map.Entry<T, S> toMapEntryImmutable();
+
+    @NotNull
+    static <U, V> Pair<U, V> valueOf(@NotNull org.apache.commons.lang3.tuple.Pair<U, V> apachePair){
+        return new MutablePair<>(apachePair.getLeft(), apachePair.getRight());
     }
 
-    public Pair(E1 first, E2 second) {
-        this.first = first;
-        this.second = second;
+    @NotNull
+    static  <U, V> Pair<U, V> valueOfImmutable(@NotNull org.apache.commons.lang3.tuple.Pair<U, V> apachePair){
+        return new ImmutablePair<>(apachePair.getLeft(), apachePair.getRight());
     }
 
-    public E1 getFirst() {
-        return first;
+    @NotNull
+    static  <U, V> Pair<U, V> valueOf(U firstElement, V secondElement){
+        return new MutablePair<>(firstElement, secondElement);
     }
 
-    public void setFirst(E1 first) {
-        this.first = first;
+    @NotNull
+    static  <U, V> Pair<U, V> valueOfImmutable(U firstElement, V secondElement){
+        return new ImmutablePair<>(firstElement, secondElement);
     }
 
-    public E2 getSecond() {
-        return second;
+    default org.apache.commons.lang3.tuple.Pair<T, S> toApachePair(){
+        return new org.apache.commons.lang3.tuple.MutablePair<>(getFirst(), getSecond());
     }
 
-    public void setSecond(E2 second) {
-        this.second = second;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Pair<?, ?> pair = (Pair<?, ?>) o;
-        return Objects.equals(first, pair.first) &&
-                Objects.equals(second, pair.second);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(first, second);
-    }
-
-    @Override
-    public String toString() {
-        return first + " " + second;
+    default org.apache.commons.lang3.tuple.Pair<T, S> toApachePairImmutable(){
+        return new org.apache.commons.lang3.tuple.ImmutablePair<>(getFirst(), getSecond());
     }
 }

@@ -1,11 +1,9 @@
-import data_structures.tuple.TupleInt;
+import data_structures.pair.Pair;
 
 public class Main {
 
     public static void main(String[] args) {
-        TupleInt tupleInt = TupleInt.valueOf(1, 2, 3);
-        TupleInt tupleInt1 = TupleInt.valueOf(1, 3);
-
-        System.out.println(tupleInt.compareTo(tupleInt1));
+        Pair<Integer, Integer> pair = Pair.valueOf(10, 10);
+        System.out.println(pair);
     }
 }

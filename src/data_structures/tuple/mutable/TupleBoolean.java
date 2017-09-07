@@ -1,4 +1,4 @@
-package data_structures.tuple;
+package data_structures.tuple.mutable;
 
 import com.google.common.primitives.Booleans;
 import data_structures.tuple.iterators.TupleIteratorBoolean;
@@ -24,10 +24,6 @@ public class TupleBoolean implements Iterable<Boolean>, Comparable<TupleBoolean>
 
     public boolean get(int index){
         return elems[index];
-    }
-
-    public final TupleBoolean add(boolean... elements){
-        return new TupleBoolean(ArrayUtils.addAll(elems, elements));
     }
 
     @Override
@@ -71,7 +67,7 @@ public class TupleBoolean implements Iterable<Boolean>, Comparable<TupleBoolean>
 
     public static TupleBoolean TupleBooleanEmpty = new TupleBoolean();
 
-    public static TupleBoolean of(boolean... elements){
+    public static TupleBoolean valueOf(boolean... elements){
         if (elements == null)
             return TupleBooleanEmpty;
         else

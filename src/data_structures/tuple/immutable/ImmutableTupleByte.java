@@ -1,6 +1,5 @@
-package data_structures.tuple;
+package data_structures.tuple.immutable;
 
-import com.google.common.primitives.Bytes;
 import com.google.common.primitives.Bytes;
 import data_structures.tuple.iterators.TupleIteratorByte;
 import org.apache.commons.lang3.ArrayUtils;
@@ -10,29 +9,25 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class TupleByte implements Iterable<Byte>, Comparable<TupleByte> {
+public class ImmutableTupleByte implements Iterable<Byte>, Comparable<ImmutableTupleByte> {
     private byte[] elems;
     public final int length;
 
-    public TupleByte(byte... elements) {
+    public ImmutableTupleByte(byte... elements) {
         this.elems = elements;
         this.length = ArrayUtils.getLength(this.elems);
-    }
-
-    public void set(int index, byte element){
-        elems[index] = element;
     }
 
     public byte get(int index){
         return elems[index];
     }
 
-    public final TupleByte add(byte... elements){
-        return new TupleByte(ArrayUtils.addAll(elems, elements));
+    public final ImmutableTupleByte add(byte... elements){
+        return new ImmutableTupleByte(ArrayUtils.addAll(elems, elements));
     }
 
     @Override
-    public int compareTo(@NotNull TupleByte o) {
+    public int compareTo(@NotNull ImmutableTupleByte o) {
         return Arrays.compare(elems, o.elems);
     }
 
@@ -40,7 +35,7 @@ public class TupleByte implements Iterable<Byte>, Comparable<TupleByte> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        TupleByte that = (TupleByte) o;
+        ImmutableTupleByte that = (ImmutableTupleByte) o;
         return Arrays.equals(elems, that.elems);
     }
 
@@ -70,12 +65,12 @@ public class TupleByte implements Iterable<Byte>, Comparable<TupleByte> {
 
     /// static methods
 
-    public static TupleByte TupleByteEmpty = new TupleByte();
+    public static ImmutableTupleByte ImmutableTupleByteEmpty = new ImmutableTupleByte();
 
-    public static TupleByte valueOf(byte... elements){
+    public static ImmutableTupleByte valueOf(byte... elements){
         if (elements == null)
-            return TupleByteEmpty;
+            return ImmutableTupleByteEmpty;
         else
-            return new TupleByte(elements);
+            return new ImmutableTupleByte(elements);
     }
 }

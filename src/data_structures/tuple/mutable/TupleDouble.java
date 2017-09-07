@@ -1,6 +1,5 @@
-package data_structures.tuple;
+package data_structures.tuple.mutable;
 
-import com.google.common.primitives.Bytes;
 import com.google.common.primitives.Doubles;
 import data_structures.tuple.iterators.TupleIteratorDouble;
 import org.apache.commons.lang3.ArrayUtils;
@@ -25,10 +24,6 @@ public class TupleDouble implements Iterable<Double>, Comparable<TupleDouble> {
 
     public double get(int index){
         return elems[index];
-    }
-
-    public final TupleDouble add(double... elements){
-        return new TupleDouble(ArrayUtils.addAll(elems, elements));
     }
 
     @Override

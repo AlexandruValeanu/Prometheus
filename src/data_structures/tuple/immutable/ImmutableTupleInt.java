@@ -1,6 +1,5 @@
-package data_structures.tuple;
+package data_structures.tuple.immutable;
 
-import com.google.common.primitives.Floats;
 import com.google.common.primitives.Ints;
 import data_structures.tuple.iterators.TupleIteratorInt;
 import org.apache.commons.lang3.ArrayUtils;
@@ -10,29 +9,21 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class TupleInt implements Iterable<Integer>, Comparable<TupleInt> {
+public class ImmutableTupleInt implements Iterable<Integer>, Comparable<ImmutableTupleInt> {
     private int[] elems;
     public int length;
 
-    public TupleInt(int... elements) {
+    public ImmutableTupleInt(int... elements) {
         this.elems = elements;
         this.length = ArrayUtils.getLength(this.elems);
-    }
-
-    public void set(int index, int elem){
-        elems[index] = elem;
     }
 
     public int get(int index){
         return elems[index];
     }
 
-    public final TupleInt add(int... elements){
-        return new TupleInt(ArrayUtils.addAll(elems, elements));
-    }
-
     @Override
-    public int compareTo(@NotNull TupleInt o) {
+    public int compareTo(@NotNull ImmutableTupleInt o) {
         return Arrays.compare(elems, o.elems);
     }
 
@@ -40,7 +31,7 @@ public class TupleInt implements Iterable<Integer>, Comparable<TupleInt> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        TupleInt that = (TupleInt) o;
+        ImmutableTupleInt that = (ImmutableTupleInt) o;
         return Arrays.equals(elems, that.elems);
     }
 
@@ -70,12 +61,12 @@ public class TupleInt implements Iterable<Integer>, Comparable<TupleInt> {
 
     /// static methods
 
-    public static TupleInt TupleIntEmpty = new TupleInt();
+    private static ImmutableTupleInt ImmutableTupleIntEmpty = new ImmutableTupleInt();
 
-    public static TupleInt valueOf(int... elements){
+    public static ImmutableTupleInt valueOf(int... elements){
         if (elements == null)
-            return TupleIntEmpty;
+            return ImmutableTupleIntEmpty;
         else
-            return new TupleInt(elements);
+            return new ImmutableTupleInt(elements);
     }
 }

@@ -16,7 +16,7 @@ public class TupleIterator<E> implements Iterator<E> {
 
     @Override
     public boolean hasNext() {
-        return p < tuple.length;
+        return p < tuple.size();
     }
 
     @Override

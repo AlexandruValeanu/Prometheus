@@ -1,4 +1,4 @@
-package data_structures.tuple;
+package data_structures.tuple.mutable;
 
 import com.google.common.primitives.Longs;
 import data_structures.tuple.iterators.TupleIteratorLong;
@@ -24,10 +24,6 @@ public class TupleLong implements Iterable<Long>, Comparable<TupleLong> {
 
     public long get(int index){
         return elems[index];
-    }
-
-    public final TupleLong add(long... elements){
-        return new TupleLong(ArrayUtils.addAll(elems, elements));
     }
 
     @Override

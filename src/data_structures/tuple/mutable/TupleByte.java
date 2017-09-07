@@ -1,8 +1,7 @@
-package data_structures.tuple;
+package data_structures.tuple.mutable;
 
 import com.google.common.primitives.Bytes;
-import com.google.common.primitives.Floats;
-import data_structures.tuple.iterators.TupleIteratorFloat;
+import data_structures.tuple.iterators.TupleIteratorByte;
 import org.apache.commons.lang3.ArrayUtils;
 import org.jetbrains.annotations.NotNull;
 
@@ -10,29 +9,25 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class TupleFloat implements Iterable<Float>, Comparable<TupleFloat> {
-    private float[] elems;
+public class TupleByte implements Iterable<Byte>, Comparable<TupleByte> {
+    private byte[] elems;
     public final int length;
 
-    public TupleFloat(float... elements) {
+    public TupleByte(byte... elements) {
         this.elems = elements;
         this.length = ArrayUtils.getLength(this.elems);
     }
 
-    public void set(int index, float element){
+    public void set(int index, byte element){
         elems[index] = element;
     }
 
-    public float get(int index){
+    public byte get(int index){
         return elems[index];
     }
 
-    public final TupleFloat add(float... elements){
-        return new TupleFloat(ArrayUtils.addAll(elems, elements));
-    }
-
     @Override
-    public int compareTo(@NotNull TupleFloat o) {
+    public int compareTo(@NotNull TupleByte o) {
         return Arrays.compare(elems, o.elems);
     }
 
@@ -40,7 +35,7 @@ public class TupleFloat implements Iterable<Float>, Comparable<TupleFloat> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        TupleFloat that = (TupleFloat) o;
+        TupleByte that = (TupleByte) o;
         return Arrays.equals(elems, that.elems);
     }
 
@@ -54,28 +49,28 @@ public class TupleFloat implements Iterable<Float>, Comparable<TupleFloat> {
         return Arrays.toString(elems);
     }
 
-    public float[] toArray(){
+    public byte[] toArray(){
         return elems.clone();
     }
 
-    public List<Float> toList(){
-        return Floats.asList(elems);
+    public List<Byte> toList(){
+        return Bytes.asList(elems);
     }
 
     @NotNull
     @Override
-    public Iterator<Float> iterator() {
-        return new TupleIteratorFloat(this);
+    public Iterator<Byte> iterator() {
+        return new TupleIteratorByte(this);
     }
 
     /// static methods
 
-    public static TupleFloat TupleFloatEmpty = new TupleFloat();
+    public static TupleByte TupleByteEmpty = new TupleByte();
 
-    public static TupleFloat valueOf(float... elements){
+    public static TupleByte valueOf(byte... elements){
         if (elements == null)
-            return TupleFloatEmpty;
+            return TupleByteEmpty;
         else
-            return new TupleFloat(elements);
+            return new TupleByte(elements);
     }
 }

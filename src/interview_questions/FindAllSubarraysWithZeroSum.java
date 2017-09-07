@@ -1,6 +1,6 @@
 package interview_questions;
 
-import data_structures.pair.Pair;
+import data_structures.pair.MutablePair;
 
 import java.util.*;
 
@@ -13,8 +13,8 @@ public class FindAllSubarraysWithZeroSum {
     private FindAllSubarraysWithZeroSum(){
     }
 
-    public static List<Pair<Integer, Integer>> naiveFindSubarrays(int[] array){
-        List<Pair<Integer, Integer>> pairs = new ArrayList<>();
+    public static List<MutablePair<Integer, Integer>> naiveFindSubarrays(int[] array){
+        List<MutablePair<Integer, Integer>> pairs = new ArrayList<>();
 
         // consider all sub-arrays starting from i
         for (int i = 0; i < array.length; i++) {
@@ -27,7 +27,7 @@ public class FindAllSubarraysWithZeroSum {
 
                 // [i..j] has sum 0
                 if (sum == 0)
-                    pairs.add(new Pair<>(i, j));
+                    pairs.add(new MutablePair<>(i, j));
             }
         }
 
@@ -45,8 +45,8 @@ public class FindAllSubarraysWithZeroSum {
         }
     }
 
-    public static List<Pair<Integer, Integer>> hashingFindSubarrays(int[] array){
-        List<Pair<Integer, Integer>> pairs = new ArrayList<>();
+    public static List<MutablePair<Integer, Integer>> hashingFindSubarrays(int[] array){
+        List<MutablePair<Integer, Integer>> pairs = new ArrayList<>();
 
         // create an empty multimap to store ending index of all sub-arrays having same sum
         Map<Integer, ArrayList<Integer>> map = new HashMap<>();
@@ -63,7 +63,7 @@ public class FindAllSubarraysWithZeroSum {
             // if sum is seen before, there exists at least one sub-array with 0 sum
             if (map.containsKey(sum)){
                 for (int start: map.get(sum))
-                    pairs.add(new Pair<>(start + 1, i));
+                    pairs.add(new MutablePair<>(start + 1, i));
 
             }
 

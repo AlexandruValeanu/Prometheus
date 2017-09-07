@@ -1,64 +1,52 @@
 package data_structures.tuple;
 
+import data_structures.tuple.immutable.ImmutableTuple;
 import data_structures.tuple.iterators.TupleIterator;
+import data_structures.tuple.mutable.MutableTuple;
 import org.apache.commons.lang3.ArrayUtils;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.*;
+import java.util.Iterator;
+import java.util.List;
 
-public class Tuple<E> implements Iterable<E> {
-    private E[] elems;
-    public final int length;
+public interface Tuple<E> extends Iterable<E> {
 
+    void set(int index, E element);
+
+    E get(int index);
+
+    int size();
+
+    E[] toArray();
+    List<E> toList();
+
+    @NotNull
     @SafeVarargs
-    public Tuple(E... elements) {
-        this.elems = elements;
-        this.length = ArrayUtils.getLength(this.elems);
-    }
-
-    public void set(int index, E element){
-        elems[index] = element;
-    }
-
-    public E get(int index){
-        return elems[index];
+    static <T> Tuple<T> valueOf(T... elements){
+        return new MutableTuple<>(elements);
     }
 
     @NotNull
     @SafeVarargs
-    public final Tuple<E> add(E... elements){
-        return new Tuple<>(ArrayUtils.addAll(elems, elements));
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Tuple<?> tuple = (Tuple<?>) o;
-        return Arrays.equals(elems, tuple.elems);
-    }
-
-    @Override
-    public int hashCode() {
-        return Arrays.hashCode(elems);
-    }
-
-    @Override
-    public String toString() {
-        return Arrays.toString(elems);
-    }
-
-    public E[] toArray(){
-        return elems.clone();
-    }
-
-    public List<E> toList(){
-        return Arrays.asList(elems);
+    static <T> Tuple<T> valueOfImmutable(T... elements){
+        return new ImmutableTuple<>(elements);
     }
 
     @NotNull
-    @Override
-    public Iterator<E> iterator() {
+    @SafeVarargs
+    static <T> Tuple<T> valueOf(@NotNull Tuple<T> tuple, T... elements){
+        return new MutableTuple<>(ArrayUtils.addAll(tuple.toArray(), elements));
+    }
+
+    @NotNull
+    @SafeVarargs
+    static <T> Tuple<T> valueOfImmutable(@NotNull Tuple<T> tuple, T... elements){
+        return new ImmutableTuple<>(ArrayUtils.addAll(tuple.toArray(), elements));
+    }
+
+    @NotNull
+    default Iterator<E> iterator() {
         return new TupleIterator<>(this);
     }
+
 }

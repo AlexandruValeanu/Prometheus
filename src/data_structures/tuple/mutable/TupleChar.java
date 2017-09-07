@@ -1,4 +1,4 @@
-package data_structures.tuple;
+package data_structures.tuple.mutable;
 
 import com.google.common.primitives.Chars;
 import data_structures.tuple.iterators.TupleIteratorChar;
@@ -24,10 +24,6 @@ public class TupleChar implements Iterable<Character>, Comparable<TupleChar> {
 
     public char get(int index){
         return elems[index];
-    }
-
-    public final TupleChar add(char... elements){
-        return new TupleChar(ArrayUtils.addAll(elems, elements));
     }
 
     @Override
