@@ -1,12 +1,14 @@
-package data_structures.pair;
+package data_structures.pair.mutable;
 
+import data_structures.pair.immutable.ImmutablePairChar;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class PairChar implements Comparable<PairChar> {
-    char first;
-    char second;
+    public char first;
+    public char second;
 
     public PairChar() {
         this.first = 0;
@@ -16,6 +18,16 @@ public class PairChar implements Comparable<PairChar> {
     public PairChar(char first, char second) {
         this.first = first;
         this.second = second;
+    }
+
+    public PairChar(PairChar pairChar) {
+        this.first = pairChar.first;
+        this.second = pairChar.second;
+    }
+
+    public PairChar(ImmutablePairChar pairChar) {
+        this.first = pairChar.first;
+        this.second = pairChar.second;
     }
 
     public char getFirst() {
@@ -36,12 +48,9 @@ public class PairChar implements Comparable<PairChar> {
 
     @Override
     public int compareTo(@NotNull PairChar o) {
-        int c = Character.compare(first, o.first);
-
-        if (c != 0)
-            return c;
-        else
-            return Character.compare(second, o.second);
+        return Comparator.comparing(PairChar::getFirst)
+                .thenComparing(PairChar::getSecond)
+                .compare(this, o);
     }
 
     @Override
@@ -60,6 +69,16 @@ public class PairChar implements Comparable<PairChar> {
 
     @Override
     public String toString() {
-        return first + " " + second;
+        return "PairChar{" +
+                "first=" + first +
+                ", second=" + second +
+                '}';
+    }
+
+    // static methods
+
+    @NotNull
+    static PairChar valueOf(char first, char second) {
+        return new PairChar(first, second);
     }
 }

@@ -1,12 +1,14 @@
-package data_structures.pair;
+package data_structures.pair.mutable;
 
+import data_structures.pair.immutable.ImmutablePairFloat;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class PairFloat implements Comparable<PairFloat> {
-    float first;
-    float second;
+    public float first;
+    public float second;
 
     public PairFloat() {
         this.first = 0;
@@ -16,6 +18,16 @@ public class PairFloat implements Comparable<PairFloat> {
     public PairFloat(float first, float second) {
         this.first = first;
         this.second = second;
+    }
+
+    public PairFloat(PairFloat pairFloat) {
+        this.first = pairFloat.first;
+        this.second = pairFloat.second;
+    }
+
+    public PairFloat(ImmutablePairFloat pairFloat) {
+        this.first = pairFloat.first;
+        this.second = pairFloat.second;
     }
 
     public float getFirst() {
@@ -36,12 +48,9 @@ public class PairFloat implements Comparable<PairFloat> {
 
     @Override
     public int compareTo(@NotNull PairFloat o) {
-        int c = Float.compare(first, o.first);
-
-        if (c != 0)
-            return c;
-        else
-            return Float.compare(second, o.second);
+        return Comparator.comparing(PairFloat::getFirst)
+                .thenComparing(PairFloat::getSecond)
+                .compare(this, o);
     }
 
     @Override
@@ -60,6 +69,16 @@ public class PairFloat implements Comparable<PairFloat> {
 
     @Override
     public String toString() {
-        return first + " " + second;
+        return "PairFloat{" +
+                "first=" + first +
+                ", second=" + second +
+                '}';
+    }
+
+    // static methods
+
+    @NotNull
+    static PairFloat valueOf(float first, float second) {
+        return new PairFloat(first, second);
     }
 }

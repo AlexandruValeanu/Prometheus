@@ -1,12 +1,14 @@
-package data_structures.pair;
+package data_structures.pair.mutable;
 
+import data_structures.pair.immutable.ImmutablePairByte;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class PairByte implements Comparable<PairByte> {
-    byte first;
-    byte second;
+    public byte first;
+    public byte second;
 
     public PairByte() {
         this.first = 0;
@@ -16,6 +18,16 @@ public class PairByte implements Comparable<PairByte> {
     public PairByte(byte first, byte second) {
         this.first = first;
         this.second = second;
+    }
+
+    public PairByte(PairByte pairByte) {
+        this.first = pairByte.first;
+        this.second = pairByte.second;
+    }
+
+    public PairByte(ImmutablePairByte pairByte) {
+        this.first = pairByte.first;
+        this.second = pairByte.second;
     }
 
     public byte getFirst() {
@@ -36,12 +48,9 @@ public class PairByte implements Comparable<PairByte> {
 
     @Override
     public int compareTo(@NotNull PairByte o) {
-        int c = Byte.compare(first, o.first);
-
-        if (c != 0)
-            return c;
-        else
-            return Byte.compare(second, o.second);
+        return Comparator.comparing(PairByte::getFirst)
+                .thenComparing(PairByte::getSecond)
+                .compare(this, o);
     }
 
     @Override
@@ -60,6 +69,16 @@ public class PairByte implements Comparable<PairByte> {
 
     @Override
     public String toString() {
-        return first + " " + second;
+        return "PairByte{" +
+                "first=" + first +
+                ", second=" + second +
+                '}';
+    }
+
+    // static methods
+
+    @NotNull
+    static PairByte valueOf(byte first, byte second) {
+        return new PairByte(first, second);
     }
 }

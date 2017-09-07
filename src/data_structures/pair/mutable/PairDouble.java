@@ -1,12 +1,14 @@
-package data_structures.pair;
+package data_structures.pair.mutable;
 
+import data_structures.pair.immutable.ImmutablePairDouble;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class PairDouble implements Comparable<PairDouble> {
-    double first;
-    double second;
+    public double first;
+    public double second;
 
     public PairDouble() {
         this.first = 0;
@@ -16,6 +18,16 @@ public class PairDouble implements Comparable<PairDouble> {
     public PairDouble(double first, double second) {
         this.first = first;
         this.second = second;
+    }
+
+    public PairDouble(PairDouble pairDouble) {
+        this.first = pairDouble.first;
+        this.second = pairDouble.second;
+    }
+
+    public PairDouble(ImmutablePairDouble pairDouble) {
+        this.first = pairDouble.first;
+        this.second = pairDouble.second;
     }
 
     public double getFirst() {
@@ -36,12 +48,9 @@ public class PairDouble implements Comparable<PairDouble> {
 
     @Override
     public int compareTo(@NotNull PairDouble o) {
-        int c = Double.compare(first, o.first);
-
-        if (c != 0)
-            return c;
-        else
-            return Double.compare(second, o.second);
+        return Comparator.comparing(PairDouble::getFirst)
+                .thenComparing(PairDouble::getSecond)
+                .compare(this, o);
     }
 
     @Override
@@ -60,6 +69,16 @@ public class PairDouble implements Comparable<PairDouble> {
 
     @Override
     public String toString() {
-        return first + " " + second;
+        return "PairDouble{" +
+                "first=" + first +
+                ", second=" + second +
+                '}';
+    }
+
+    // static methods
+
+    @NotNull
+    static PairDouble valueOf(double first, double second) {
+        return new PairDouble(first, second);
     }
 }

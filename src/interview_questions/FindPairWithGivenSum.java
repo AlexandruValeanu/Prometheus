@@ -1,6 +1,6 @@
 package interview_questions;
 
-import data_structures.pair.MutablePair;
+import data_structures.pair.mutable.MutablePair;
 
 import java.util.Arrays;
 import java.util.HashSet;

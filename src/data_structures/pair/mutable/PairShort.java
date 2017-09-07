@@ -1,12 +1,15 @@
-package data_structures.pair;
+package data_structures.pair.mutable;
 
+import data_structures.pair.immutable.ImmutablePairLong;
+import data_structures.pair.immutable.ImmutablePairShort;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class PairShort implements Comparable<PairShort> {
-    short first;
-    short second;
+    public short first;
+    public short second;
 
     public PairShort() {
         this.first = 0;
@@ -16,6 +19,16 @@ public class PairShort implements Comparable<PairShort> {
     public PairShort(short first, short second) {
         this.first = first;
         this.second = second;
+    }
+
+    public PairShort(PairShort pairShort) {
+        this.first = pairShort.first;
+        this.second = pairShort.second;
+    }
+
+    public PairShort(ImmutablePairShort pairShort) {
+        this.first = pairShort.first;
+        this.second = pairShort.second;
     }
 
     public short getFirst() {
@@ -36,12 +49,9 @@ public class PairShort implements Comparable<PairShort> {
 
     @Override
     public int compareTo(@NotNull PairShort o) {
-        int c = Short.compare(first, o.first);
-
-        if (c != 0)
-            return c;
-        else
-            return Short.compare(second, o.second);
+        return Comparator.comparing(PairShort::getFirst)
+                .thenComparing(PairShort::getSecond)
+                .compare(this, o);
     }
 
     @Override
@@ -60,6 +70,16 @@ public class PairShort implements Comparable<PairShort> {
 
     @Override
     public String toString() {
-        return first + " " + second;
+        return "PairShort{" +
+                "first=" + first +
+                ", second=" + second +
+                '}';
+    }
+
+    // static methods
+
+    @NotNull
+    static PairShort valueOf(short first, short second) {
+        return new PairShort(first, second);
     }
 }

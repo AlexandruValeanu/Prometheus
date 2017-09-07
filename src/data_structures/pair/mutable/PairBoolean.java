@@ -1,12 +1,15 @@
-package data_structures.pair;
+package data_structures.pair.mutable;
 
+import data_structures.pair.Pair;
+import data_structures.pair.immutable.ImmutablePairBoolean;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class PairBoolean implements Comparable<PairBoolean> {
-    boolean first;
-    boolean second;
+    public boolean first;
+    public boolean second;
 
     public PairBoolean() {
         this.first = false;
@@ -16,6 +19,16 @@ public class PairBoolean implements Comparable<PairBoolean> {
     public PairBoolean(boolean first, boolean second) {
         this.first = first;
         this.second = second;
+    }
+
+    public PairBoolean(PairBoolean pairBoolean) {
+        this.first = pairBoolean.first;
+        this.second = pairBoolean.second;
+    }
+
+    public PairBoolean(ImmutablePairBoolean pairBoolean) {
+        this.first = pairBoolean.first;
+        this.second = pairBoolean.second;
     }
 
     public boolean getFirst() {
@@ -36,12 +49,9 @@ public class PairBoolean implements Comparable<PairBoolean> {
 
     @Override
     public int compareTo(@NotNull PairBoolean o) {
-        int c = Boolean.compare(first, o.first);
-
-        if (c != 0)
-            return c;
-        else
-            return Boolean.compare(second, o.second);
+        return Comparator.comparing(PairBoolean::getFirst)
+                .thenComparing(PairBoolean::getSecond)
+                .compare(this, o);
     }
 
     @Override
@@ -60,6 +70,16 @@ public class PairBoolean implements Comparable<PairBoolean> {
 
     @Override
     public String toString() {
-        return first + " " + second;
+        return "PairBoolean{" +
+                "first=" + first +
+                ", second=" + second +
+                '}';
+    }
+
+    // static methods
+
+    @NotNull
+    static PairBoolean valueOf(boolean first, boolean second) {
+        return new PairBoolean(first, second);
     }
 }

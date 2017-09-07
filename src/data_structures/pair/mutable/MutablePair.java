@@ -1,41 +1,37 @@
-package data_structures.pair;
+package data_structures.pair.mutable;
 
+import data_structures.pair.Pair;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.AbstractMap;
 import java.util.Map;
 import java.util.Objects;
 
 /**
- * MutableTriple (tuple of two)
+ * MutablePair (tuple of two)
  */
-public class ImmutablePair<T, S> implements Pair<T, S> {
-    public final T first;
-    public final S second;
+public class MutablePair<T, S> implements Pair<T, S> {
 
-    public ImmutablePair(){
+    public T first;
+    public S second;
+
+    public MutablePair(){
         this.first = null;
         this.second = null;
     }
 
-    public ImmutablePair(T first, S second) {
+    public MutablePair(T first, S second) {
         this.first = first;
         this.second = second;
     }
 
-    public ImmutablePair(@NotNull Map.Entry<T, S> entry){
+    public MutablePair(@NotNull Map.Entry<T, S> entry){
         this.first = entry.getKey();
         this.second = entry.getValue();
     }
 
-    public ImmutablePair(@NotNull ImmutablePair<T, S> entry){
-        this.first = entry.first;
-        this.second = entry.second;
-    }
-
-    public ImmutablePair(@NotNull MutablePair<T, S> entry){
-        this.first = entry.first;
-        this.second = entry.second;
+    public MutablePair(@NotNull org.apache.commons.lang3.tuple.Pair<T, S> pair){
+        this.first = pair.getLeft();
+        this.second = pair.getRight();
     }
 
     public T getFirst() {
@@ -43,7 +39,7 @@ public class ImmutablePair<T, S> implements Pair<T, S> {
     }
 
     public void setFirst(T first) {
-        throw new UnsupportedOperationException("immutable pair");
+        this.first = first;
     }
 
     public S getSecond() {
@@ -51,24 +47,30 @@ public class ImmutablePair<T, S> implements Pair<T, S> {
     }
 
     public void setSecond(S second) {
-        throw new UnsupportedOperationException("immutable pair");
+        this.second = second;
     }
 
     @Override
-    public Map.Entry<T, S> toMapEntry(){
-        return new AbstractMap.SimpleEntry<>(first, second);
+    public T getKey() {
+        return first;
     }
 
     @Override
-    public Map.Entry<T, S> toMapEntryImmutable() {
-        return new AbstractMap.SimpleImmutableEntry<>(first, second);
+    public S getValue() {
+        return second;
+    }
+
+    @Override
+    public S setValue(S value) {
+        setSecond(value);
+        return value;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ImmutablePair<?, ?> pair = (ImmutablePair<?, ?>) o;
+        MutablePair<?, ?> pair = (MutablePair<?, ?>) o;
         return Objects.equals(first, pair.first) &&
                 Objects.equals(second, pair.second);
     }
@@ -80,7 +82,7 @@ public class ImmutablePair<T, S> implements Pair<T, S> {
 
     @Override
     public String toString() {
-        return "ImmutablePair{" +
+        return "MutablePair{" +
                 "first=" + first +
                 ", second=" + second +
                 '}';

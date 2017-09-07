@@ -1,12 +1,14 @@
-package data_structures.pair;
+package data_structures.pair.mutable;
 
+import data_structures.pair.immutable.ImmutablePairLong;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class PairLong implements Comparable<PairLong> {
-    long first;
-    long second;
+    public long first;
+    public long second;
 
     public PairLong() {
         this.first = 0;
@@ -16,6 +18,16 @@ public class PairLong implements Comparable<PairLong> {
     public PairLong(long first, long second) {
         this.first = first;
         this.second = second;
+    }
+
+    public PairLong(PairLong pairLong) {
+        this.first = pairLong.first;
+        this.second = pairLong.second;
+    }
+
+    public PairLong(ImmutablePairLong pairLong) {
+        this.first = pairLong.first;
+        this.second = pairLong.second;
     }
 
     public long getFirst() {
@@ -36,12 +48,9 @@ public class PairLong implements Comparable<PairLong> {
 
     @Override
     public int compareTo(@NotNull PairLong o) {
-        int c = Long.compare(first, o.first);
-
-        if (c != 0)
-            return c;
-        else
-            return Long.compare(second, o.second);
+        return Comparator.comparing(PairLong::getFirst)
+                .thenComparing(PairLong::getSecond)
+                .compare(this, o);
     }
 
     @Override
@@ -60,6 +69,16 @@ public class PairLong implements Comparable<PairLong> {
 
     @Override
     public String toString() {
-        return first + " " + second;
+        return "PairLong{" +
+                "first=" + first +
+                ", second=" + second +
+                '}';
+    }
+
+    // static methods
+
+    @NotNull
+    static PairLong valueOf(long first, long second) {
+        return new PairLong(first, second);
     }
 }
