@@ -71,7 +71,7 @@ public class TripleChar implements Comparable<TripleChar> {
 
     @Override
     public String toString() {
-        return "ImmutableTripleChar{" +
+        return "TripleChar{" +
                 "first=" + first +
                 ", second=" + second +
                 ", third=" + third +

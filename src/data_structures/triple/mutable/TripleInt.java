@@ -71,7 +71,7 @@ public class TripleInt implements Comparable<TripleInt> {
 
     @Override
     public String toString() {
-        return "ImmutableTripleInt{" +
+        return "TripleInt{" +
                 "first=" + first +
                 ", second=" + second +
                 ", third=" + third +

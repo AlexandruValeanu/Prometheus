@@ -71,7 +71,7 @@ public class TripleFloat implements Comparable<TripleFloat> {
 
     @Override
     public String toString() {
-        return "ImmutableTripleFloat{" +
+        return "TripleFloat{" +
                 "first=" + first +
                 ", second=" + second +
                 ", third=" + third +

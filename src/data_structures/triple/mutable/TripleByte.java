@@ -71,7 +71,7 @@ public class TripleByte implements Comparable<TripleByte> {
 
     @Override
     public String toString() {
-        return "ImmutableTripleByte{" +
+        return "TripleByte{" +
                 "first=" + first +
                 ", second=" + second +
                 ", third=" + third +

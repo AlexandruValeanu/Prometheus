@@ -71,7 +71,7 @@ public class TripleBoolean implements Comparable<TripleBoolean> {
 
     @Override
     public String toString() {
-        return "ImmutableTripleBoolean{" +
+        return "TripleBoolean{" +
                 "first=" + first +
                 ", second=" + second +
                 ", third=" + third +

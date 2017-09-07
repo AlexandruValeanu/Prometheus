@@ -71,7 +71,7 @@ public class TripleShort implements Comparable<TripleShort> {
 
     @Override
     public String toString() {
-        return "ImmutableTripleShort{" +
+        return "TripleShort{" +
                 "first=" + first +
                 ", second=" + second +
                 ", third=" + third +
