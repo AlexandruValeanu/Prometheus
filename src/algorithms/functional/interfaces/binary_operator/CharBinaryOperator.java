@@ -1,7 +1,7 @@
-package algorithms.functional.interfaces;
+package algorithms.functional.interfaces.binary_operator;
 
 @FunctionalInterface
-public interface BooleanBinaryOperator {
+public interface CharBinaryOperator {
     /**
      * Applies this operator to the given operands.
      *
@@ -9,5 +9,5 @@ public interface BooleanBinaryOperator {
      * @param right the second operand
      * @return the operator result
      */
-    boolean applyAsBoolean(boolean left, boolean right);
+    char applyAsChar(char left, char right);
 }

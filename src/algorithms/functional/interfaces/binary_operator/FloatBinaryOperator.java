@@ -1,7 +1,7 @@
-package algorithms.functional.interfaces;
+package algorithms.functional.interfaces.binary_operator;
 
 @FunctionalInterface
-public interface ShortBinaryOperator {
+public interface FloatBinaryOperator {
     /**
      * Applies this operator to the given operands.
      *
@@ -9,5 +9,5 @@ public interface ShortBinaryOperator {
      * @param right the second operand
      * @return the operator result
      */
-    short applyAsShort(short left, short right);
+    float applyAsFloat(float left, float right);
 }

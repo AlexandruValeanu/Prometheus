@@ -1,9 +1,9 @@
-package algorithms.functional.interfaces;
+package algorithms.functional.interfaces.unary_operator;
 
 import java.util.Objects;
 
 @FunctionalInterface
-public interface BooleanUnaryOperator {
+public interface FloatUnaryOperator {
 
     /**
      * Applies this operator to the given operand.
@@ -11,7 +11,7 @@ public interface BooleanUnaryOperator {
      * @param operand the operand
      * @return the operator result
      */
-    boolean applyAsBoolean(boolean operand);
+    float applyAsFloat(float operand);
 
     /**
      * Returns a composed operator that first applies the {@code before}
@@ -25,9 +25,9 @@ public interface BooleanUnaryOperator {
      * @throws NullPointerException if before is null
      *
      */
-    default BooleanUnaryOperator compose(BooleanUnaryOperator before) {
+    default FloatUnaryOperator compose(FloatUnaryOperator before) {
         Objects.requireNonNull(before);
-        return (boolean v) -> applyAsBoolean(before.applyAsBoolean(v));
+        return (float v) -> applyAsFloat(before.applyAsFloat(v));
     }
 
     /**
@@ -42,9 +42,9 @@ public interface BooleanUnaryOperator {
      * @throws NullPointerException if after is null
      *
      */
-    default BooleanUnaryOperator andThen(BooleanUnaryOperator after) {
+    default FloatUnaryOperator andThen(FloatUnaryOperator after) {
         Objects.requireNonNull(after);
-        return (boolean t) -> after.applyAsBoolean(applyAsBoolean(t));
+        return (float t) -> after.applyAsFloat(applyAsFloat(t));
     }
 
     /**
@@ -52,7 +52,7 @@ public interface BooleanUnaryOperator {
      *
      * @return a unary operator that always returns its input argument
      */
-    static BooleanUnaryOperator identity() {
+    static FloatUnaryOperator identity() {
         return t -> t;
     }
 }

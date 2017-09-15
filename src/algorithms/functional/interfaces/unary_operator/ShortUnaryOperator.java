@@ -1,9 +1,9 @@
-package algorithms.functional.interfaces;
+package algorithms.functional.interfaces.unary_operator;
 
 import java.util.Objects;
 
 @FunctionalInterface
-public interface ByteUnaryOperator {
+public interface ShortUnaryOperator {
 
     /**
      * Applies this operator to the given operand.
@@ -11,7 +11,7 @@ public interface ByteUnaryOperator {
      * @param operand the operand
      * @return the operator result
      */
-    byte applyAsByte(byte operand);
+    short applyAsShort(short operand);
 
     /**
      * Returns a composed operator that first applies the {@code before}
@@ -25,9 +25,9 @@ public interface ByteUnaryOperator {
      * @throws NullPointerException if before is null
      *
      */
-    default ByteUnaryOperator compose(ByteUnaryOperator before) {
+    default ShortUnaryOperator compose(ShortUnaryOperator before) {
         Objects.requireNonNull(before);
-        return (byte v) -> applyAsByte(before.applyAsByte(v));
+        return (short v) -> applyAsShort(before.applyAsShort(v));
     }
 
     /**
@@ -42,9 +42,9 @@ public interface ByteUnaryOperator {
      * @throws NullPointerException if after is null
      *
      */
-    default ByteUnaryOperator andThen(ByteUnaryOperator after) {
+    default ShortUnaryOperator andThen(ShortUnaryOperator after) {
         Objects.requireNonNull(after);
-        return (byte t) -> after.applyAsByte(applyAsByte(t));
+        return (short t) -> after.applyAsShort(applyAsShort(t));
     }
 
     /**
@@ -52,7 +52,7 @@ public interface ByteUnaryOperator {
      *
      * @return a unary operator that always returns its input argument
      */
-    static ByteUnaryOperator identity() {
+    static ShortUnaryOperator identity() {
         return t -> t;
     }
 }

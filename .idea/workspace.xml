@@ -2,16 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf4b95b-0154-4b6c-9a0e-0c73677bff79" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/BooleanConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ByteConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/CharConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/FloatConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjBooleanConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjByteConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjCharConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjFloatConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjShortConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ShortConsumer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/BooleanPredicate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/BytePredicate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/CharPredicate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/FloatPredicate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/ShortPredicate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/BooleanSupplier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/ByteSupplier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/CharSupplier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/FloatSupplier.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/ShortSupplier.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/functional/interfaces/BooleanBinaryOperator.java" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/binary_operator/BooleanBinaryOperator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/functional/interfaces/BooleanUnaryOperator.java" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/unary_operator/BooleanUnaryOperator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/functional/interfaces/ByteBinaryOperator.java" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/binary_operator/ByteBinaryOperator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/functional/interfaces/ByteUnaryOperator.java" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/unary_operator/ByteUnaryOperator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/functional/interfaces/CharBinaryOperator.java" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/binary_operator/CharBinaryOperator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/functional/interfaces/CharUnaryOperator.java" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/unary_operator/CharUnaryOperator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/functional/interfaces/FloatBinaryOperator.java" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/binary_operator/FloatBinaryOperator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/functional/interfaces/FloatUnaryOperator.java" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/unary_operator/FloatUnaryOperator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/functional/interfaces/ShortBinaryOperator.java" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/binary_operator/ShortBinaryOperator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/algorithms/functional/interfaces/ShortUnaryOperator.java" afterPath="$PROJECT_DIR$/src/algorithms/functional/interfaces/unary_operator/ShortUnaryOperator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Prometheus/Main.class" afterPath="$PROJECT_DIR$/out/production/Prometheus/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleBoolean.java" afterPath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleBoolean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleByte.java" afterPath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleByte.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleChar.java" afterPath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleChar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleDouble.java" afterPath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleDouble.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleFloat.java" afterPath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleFloat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleInt.java" afterPath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleInt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleLong.java" afterPath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleLong.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleShort.java" afterPath="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleShort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/algorithms/functional/Functional.java" afterPath="$PROJECT_DIR$/src/algorithms/functional/Functional.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +46,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,10 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>f</find>
-      <find>lg</find>
-      <find>Predicate&lt;Integer&gt;</find>
-      <find>Function&lt;Integer, Integer&gt;</find>
       <find>fromIndex</find>
       <find>toIndex</find>
       <find>double</find>
@@ -49,27 +69,30 @@
       <find>foldl</find>
       <find>Supp</find>
       <find>public</find>
-      <find>Char</find>
       <find>of</find>
       <find>E1</find>
       <find>E2</find>
       <find>Fraction</find>
-      <find>int</find>
       <find>Boolean</find>
       <find>Long</find>
       <find>Double</find>
-      <find>Short</find>
       <find>Float</find>
-      <find>Byte</find>
       <find>boolean</find>
-      <find>byte</find>
-      <find>char</find>
-      <find>short</find>
       <find>long</find>
       <find>float</find>
+      <find>Character</find>
+      <find>filter</find>
+      <find>int</find>
+      <find>IntConsumer</find>
+      <find>Char</find>
+      <find>short</find>
+      <find>char</find>
+      <find>Int</find>
+      <find>byte</find>
+      <find>Short</find>
+      <find>Byte</find>
     </findStrings>
     <replaceStrings>
-      <replace>countIf</replace>
       <replace>findIf</replace>
       <replace>findIfNot</replace>
       <replace>func</replace>
@@ -79,26 +102,27 @@
       <replace>from</replace>
       <replace>to</replace>
       <replace>y</replace>
-      <replace>Byte</replace>
       <replace>valueOf</replace>
-      <replace>boolean</replace>
       <replace>T</replace>
       <replace>S</replace>
       <replace>FractionInt</replace>
-      <replace>Short</replace>
       <replace>Int</replace>
-      <replace>Float</replace>
       <replace>Long</replace>
       <replace>Double</replace>
-      <replace>Char</replace>
-      <replace>Boolean</replace>
-      <replace>byte</replace>
-      <replace>char</replace>
-      <replace>short</replace>
       <replace>int</replace>
       <replace>long</replace>
-      <replace>float</replace>
       <replace>double</replace>
+      <replace>Cgar</replace>
+      <replace>Short</replace>
+      <replace>char</replace>
+      <replace>byte</replace>
+      <replace>boolean</replace>
+      <replace>float</replace>
+      <replace>Byte</replace>
+      <replace>Boolean</replace>
+      <replace>short</replace>
+      <replace>Float</replace>
+      <replace>Char</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -113,31 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/mutable/TupleFloat.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/mutable/TupleDouble.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/mutable/TupleChar.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleBoolean.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/mutable/TupleByte.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/mutable/TupleBoolean.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleShort.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleLong.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleInt.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleFloat.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleDouble.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleChar.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleByte.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/pair/Pair.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/pair/MutablePair.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/pair/ImmutablePair.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/pair/PairByte.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/pair/PairChar.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/pair/PairShort.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/pair/PairLong.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/pair/PairFloat.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/pair/PairDouble.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/pair/PairBoolean.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/pair/PairInt.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/data_structures/pair/immutable/PairByte.java" />
         <option value="$PROJECT_DIR$/src/data_structures/pair/immutable/ImmutablePair.java" />
         <option value="$PROJECT_DIR$/src/data_structures/pair/mutable/PairByte.java" />
@@ -164,6 +163,31 @@
         <option value="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleInt.java" />
         <option value="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleLong.java" />
         <option value="$PROJECT_DIR$/src/data_structures/triple/mutable/TripleShort.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/optional/OptionalShort.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/BytePredicate.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/CharPredicate.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/ShortPredicate.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/FloatPredicate.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/BooleanPredicate.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/unary_operator/ShortUnaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/binary_operator/ShortBinaryOperator.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/Functional.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ByteConsumer.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/CharConsumer.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/BooleanConsumer.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ShortConsumer.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/FloatConsumer.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjCharConsumer.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjBooleanConsumer.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjByteConsumer.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjShortConsumer.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjFloatConsumer.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/ByteSupplier.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/BooleanSupplier.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/ShortSupplier.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/FloatSupplier.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/CharSupplier.java" />
       </list>
     </option>
   </component>
@@ -174,10 +198,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="69" />
-    <option name="y" value="24" />
-    <option name="width" value="1920" />
-    <option name="height" value="1042" />
+    <option name="x" value="-2" />
+    <option name="y" value="-4" />
+    <option name="width" value="1922" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -219,10 +243,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,80 +259,82 @@
               <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
               <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data_structures" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="functional" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="functional" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="functional" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="binary_operator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="functional" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="functional" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="predicate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="functional" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="supplier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="functional" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="unary_operator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
               <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="data_structures" type="462c0819:PsiDirectoryNode" />
-              <item name="pair" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data_structures" type="462c0819:PsiDirectoryNode" />
-              <item name="pair" type="462c0819:PsiDirectoryNode" />
-              <item name="immutable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data_structures" type="462c0819:PsiDirectoryNode" />
-              <item name="pair" type="462c0819:PsiDirectoryNode" />
-              <item name="mutable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data_structures" type="462c0819:PsiDirectoryNode" />
-              <item name="triple" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data_structures" type="462c0819:PsiDirectoryNode" />
-              <item name="triple" type="462c0819:PsiDirectoryNode" />
-              <item name="immutable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prometheus" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data_structures" type="462c0819:PsiDirectoryNode" />
-              <item name="triple" type="462c0819:PsiDirectoryNode" />
-              <item name="mutable" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="commons-lang3-3.6.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="commons-lang3-3.6.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="lang3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prometheus" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="commons-lang3-3.6.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="lang3" type="462c0819:PsiDirectoryNode" />
-              <item name="tuple" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,9 +350,6 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/test" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="data_structures.pair" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="algorithms.number_theory" />
       <recent name="test.algorithms" />
@@ -344,6 +363,11 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/data_structures/pair/immutable" />
       <recent name="$PROJECT_DIR$/src/data_structures/tuple/immutable" />
@@ -352,16 +376,14 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="algorithms.functional.interfaces.supplier" />
+      <recent name="algorithms.functional.interfaces.consumer" />
+      <recent name="algorithms.functional.interfaces.predicate" />
       <recent name="data_structures.pair" />
       <recent name="data_structures.tuple.iterators" />
-      <recent name="data_structures.tuple.mutable" />
-      <recent name="data_structures.triple.mutable" />
-      <recent name="data_structures.tuple" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/test" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="data_structures.pair" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -970,7 +992,9 @@
       <workItem from="1504629105888" duration="4158000" />
       <workItem from="1504680440312" duration="46000" />
       <workItem from="1504725444812" duration="4296000" />
-      <workItem from="1504765404642" duration="13649000" />
+      <workItem from="1504765404642" duration="14429000" />
+      <workItem from="1504849245868" duration="17000" />
+      <workItem from="1505458300984" duration="5939000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1492409929192</created>
@@ -1189,7 +1213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504785792464</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="update pair">
+      <created>1504785874450</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1504785874450</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1225,10 +1256,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158040000" />
+    <option name="totallyTimeSpent" value="164776000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="24" width="1922" height="1092" extended-state="6" />
+    <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1239,13 +1270,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.50426894" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.49573106" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670158" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32670158" sideWeight="0.49786553" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22678763" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23212379" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1259,6 +1289,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1328,455 +1359,385 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/mutable/TupleBoolean.java">
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/OptionalInt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="795">
+          <caret line="311" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="311" selection-end-column="0" />
           <folding>
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/mutable/TupleByte.java">
+    <entry file="file://$PROJECT_DIR$/src/data_structures/optional/OptionalShort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="67" column="28" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
-          <folding>
-            <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#719#720#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/mutable/TupleChar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleBoolean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="71" column="28" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+        <state relative-caret-position="720">
+          <caret line="130" column="37" lean-forward="false" selection-start-line="130" selection-start-column="26" selection-end-line="130" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleByte.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/FloatPredicate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="71" column="28" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+        <state relative-caret-position="253">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <marker date="1505459942302" expanded="false" signature="1827:1838" ph=" { " />
+            <marker date="1505459942302" expanded="false" signature="1869:1875" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/CharPredicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-339">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/function/IntPredicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/ShortPredicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/BytePredicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleChar.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/predicate/BooleanPredicate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="67" column="28" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+        <state relative-caret-position="325">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleDouble.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/binary_operator/ShortBinaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="67" column="28" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+        <state relative-caret-position="90">
+          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleFloat.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/binary_operator/FloatBinaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="68" column="28" lean-forward="false" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+        <state relative-caret-position="54">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleInt.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/binary_operator/CharBinaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="67" column="28" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+        <state relative-caret-position="54">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleLong.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/binary_operator/ByteBinaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="67" column="28" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+        <state relative-caret-position="54">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTupleShort.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/binary_operator/BooleanBinaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="67" column="28" lean-forward="false" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+        <state relative-caret-position="54">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/mutable/TupleDouble.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/unary_operator/ShortUnaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="404" column="14" lean-forward="false" selection-start-line="404" selection-start-column="14" selection-end-line="404" selection-end-column="14" />
+        <state relative-caret-position="90">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/AbstractMap.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/unary_operator/FloatUnaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="793" column="54" lean-forward="false" selection-start-line="793" selection-start-column="12" selection-end-line="793" selection-end-column="54" />
+        <state relative-caret-position="18">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/lang/Comparable.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/unary_operator/CharUnaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-291">
-          <caret line="95" column="17" lean-forward="false" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+        <state relative-caret-position="18">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/unary_operator/ByteUnaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/unary_operator/BooleanUnaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/stream/DoubleStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="820" column="12" lean-forward="false" selection-start-line="820" selection-start-column="12" selection-end-line="820" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="46" lean-forward="false" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#110#111#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/immutable/ImmutableTripleByte.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/Functional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2121">
+          <caret line="1001" column="5" lean-forward="false" selection-start-line="1001" selection-start-column="5" selection-end-line="1001" selection-end-column="5" />
+          <folding>
+            <element signature="e#16964#16965#0" expanded="true" />
+            <element signature="e#17024#17025#0" expanded="true" />
+            <element signature="e#18800#18801#0" expanded="true" />
+            <element signature="e#18852#18853#0" expanded="true" />
+            <element signature="e#18918#18919#0" expanded="true" />
+            <element signature="e#18970#18971#0" expanded="true" />
+            <element signature="e#19272#19273#0" expanded="true" />
+            <element signature="e#19324#19325#0" expanded="true" />
+            <element signature="e#20443#20444#0" expanded="true" />
+            <element signature="e#20495#20496#0" expanded="true" />
+            <element signature="e#26473#26474#0" expanded="true" />
+            <element signature="e#26523#26524#0" expanded="true" />
+            <marker date="1505463317321" expanded="false" signature="17087:17097" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="17142:17148" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="17545:17555" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="17600:17606" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="17692:17722" ph="/unchecked/" />
+            <marker date="1505463317321" expanded="false" signature="19407:19417" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="19454:19460" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="20561:20571" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="20608:20614" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="20913:20923" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="20960:20966" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="21048:21058" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="21095:21101" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="22133:22143" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="22162:22168" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="22268:22278" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="22297:22303" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="22397:22407" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="22426:22432" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="22528:22538" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="22557:22563" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="22655:22665" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="22684:22690" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="22784:22794" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="22813:22819" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="22915:22925" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="22944:22950" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="23048:23058" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="23077:23083" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="24112:24122" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="24153:24159" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="24435:24445" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="24476:24482" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="24760:24770" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="24801:24807" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="25130:25140" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="25171:25177" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="25242:25252" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="25287:25293" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="25339:25349" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="25380:25386" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="25662:25672" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="25703:25709" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="25987:25997" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="26028:26034" ph=" }" />
+            <marker date="1505463317321" expanded="false" signature="26337:26347" ph=" { " />
+            <marker date="1505463317321" expanded="false" signature="26382:26388" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/function/IntConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="66" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/CharConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjFloatConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjCharConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjByteConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <caret line="8" column="66" lean-forward="false" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/tuple/immutable/ImmutableTuple.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/FloatConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="-21">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ShortConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/BooleanConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ByteConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="30" column="63" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/mutable/MutablePair.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjBooleanConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="57" column="13" lean-forward="true" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
+        <state relative-caret-position="96">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/mutable/PairInt.java">
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/function/ObjIntConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="77" column="4" lean-forward="false" selection-start-line="77" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
+        <state relative-caret-position="54">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="51" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/Pair.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/consumer/ObjShortConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/mutable/PairShort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/mutable/PairLong.java">
+    <entry file="jar:///usr/lib/jvm/java-9-oracle/lib/src.zip!/java.base/java/util/function/IntSupplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="77" column="4" lean-forward="true" selection-start-line="77" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
+        <state relative-caret-position="54">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="48" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/mutable/PairFloat.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/CharSupplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="77" column="4" lean-forward="true" selection-start-line="77" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
+        <state relative-caret-position="288">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/mutable/PairDouble.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/ByteSupplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="77" column="4" lean-forward="false" selection-start-line="77" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
+        <state relative-caret-position="234">
+          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/mutable/PairChar.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/BooleanSupplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="77" column="4" lean-forward="true" selection-start-line="77" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
+        <state relative-caret-position="234">
+          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/mutable/PairByte.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/ShortSupplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="77" column="4" lean-forward="true" selection-start-line="77" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/mutable/PairBoolean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="78" column="4" lean-forward="false" selection-start-line="78" selection-start-column="4" selection-end-line="83" selection-end-column="5" />
+        <state relative-caret-position="252">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/immutable/ImmutablePair.java">
+    <entry file="file://$PROJECT_DIR$/src/algorithms/functional/interfaces/supplier/FloatSupplier.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="40" column="16" lean-forward="false" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
-          <folding>
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/immutable/ImmutablePairBoolean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/immutable/ImmutablePairByte.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
-          <folding>
-            <element signature="e#1839#1840#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/immutable/ImmutablePairChar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
-          <folding>
-            <element signature="e#1839#1840#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/immutable/ImmutablePairDouble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="73" column="38" lean-forward="false" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
-          <folding>
-            <element signature="e#1899#1900#0" expanded="true" />
-            <element signature="e#1960#1961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/immutable/ImmutablePairFloat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="73" column="37" lean-forward="false" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
-          <folding>
-            <element signature="e#1869#1870#0" expanded="true" />
-            <element signature="e#1929#1930#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/immutable/ImmutablePairInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="73" column="35" lean-forward="false" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
-          <folding>
-            <element signature="e#1809#1810#0" expanded="true" />
-            <element signature="e#1867#1868#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/immutable/ImmutablePairLong.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
-          <folding>
-            <element signature="e#1839#1840#0" expanded="true" />
-            <element signature="e#1898#1899#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/pair/immutable/ImmutablePairShort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="42" column="58" lean-forward="false" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/immutable/ImmutableTriple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/mutable/TripleBoolean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/mutable/TripleByte.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/mutable/TripleChar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/immutable/ImmutableTripleFloat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/immutable/ImmutableTripleInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/immutable/ImmutableTripleLong.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/immutable/ImmutableTripleShort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/mutable/MutableTriple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-339">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/mutable/TripleShort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/mutable/TripleLong.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/mutable/TripleInt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/mutable/TripleFloat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/triple/mutable/TripleDouble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="73" column="16" lean-forward="false" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+        <state relative-caret-position="234">
+          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
           <folding />
         </state>
       </provider>

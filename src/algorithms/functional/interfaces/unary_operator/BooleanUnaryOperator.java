@@ -1,9 +1,9 @@
-package algorithms.functional.interfaces;
+package algorithms.functional.interfaces.unary_operator;
 
 import java.util.Objects;
 
 @FunctionalInterface
-public interface CharUnaryOperator {
+public interface BooleanUnaryOperator {
 
     /**
      * Applies this operator to the given operand.
@@ -11,7 +11,7 @@ public interface CharUnaryOperator {
      * @param operand the operand
      * @return the operator result
      */
-    char applyAsChar(char operand);
+    boolean applyAsBoolean(boolean operand);
 
     /**
      * Returns a composed operator that first applies the {@code before}
@@ -25,9 +25,9 @@ public interface CharUnaryOperator {
      * @throws NullPointerException if before is null
      *
      */
-    default CharUnaryOperator compose(CharUnaryOperator before) {
+    default BooleanUnaryOperator compose(BooleanUnaryOperator before) {
         Objects.requireNonNull(before);
-        return (char v) -> applyAsChar(before.applyAsChar(v));
+        return (boolean v) -> applyAsBoolean(before.applyAsBoolean(v));
     }
 
     /**
@@ -42,9 +42,9 @@ public interface CharUnaryOperator {
      * @throws NullPointerException if after is null
      *
      */
-    default CharUnaryOperator andThen(CharUnaryOperator after) {
+    default BooleanUnaryOperator andThen(BooleanUnaryOperator after) {
         Objects.requireNonNull(after);
-        return (char t) -> after.applyAsChar(applyAsChar(t));
+        return (boolean t) -> after.applyAsBoolean(applyAsBoolean(t));
     }
 
     /**
@@ -52,7 +52,7 @@ public interface CharUnaryOperator {
      *
      * @return a unary operator that always returns its input argument
      */
-    static CharUnaryOperator identity() {
+    static BooleanUnaryOperator identity() {
         return t -> t;
     }
 }

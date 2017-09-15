@@ -1,9 +1,9 @@
-package algorithms.functional.interfaces;
+package algorithms.functional.interfaces.unary_operator;
 
 import java.util.Objects;
 
 @FunctionalInterface
-public interface FloatUnaryOperator {
+public interface ByteUnaryOperator {
 
     /**
      * Applies this operator to the given operand.
@@ -11,7 +11,7 @@ public interface FloatUnaryOperator {
      * @param operand the operand
      * @return the operator result
      */
-    float applyAsFloat(float operand);
+    byte applyAsByte(byte operand);
 
     /**
      * Returns a composed operator that first applies the {@code before}
@@ -25,9 +25,9 @@ public interface FloatUnaryOperator {
      * @throws NullPointerException if before is null
      *
      */
-    default FloatUnaryOperator compose(FloatUnaryOperator before) {
+    default ByteUnaryOperator compose(ByteUnaryOperator before) {
         Objects.requireNonNull(before);
-        return (float v) -> applyAsFloat(before.applyAsFloat(v));
+        return (byte v) -> applyAsByte(before.applyAsByte(v));
     }
 
     /**
@@ -42,9 +42,9 @@ public interface FloatUnaryOperator {
      * @throws NullPointerException if after is null
      *
      */
-    default FloatUnaryOperator andThen(FloatUnaryOperator after) {
+    default ByteUnaryOperator andThen(ByteUnaryOperator after) {
         Objects.requireNonNull(after);
-        return (float t) -> after.applyAsFloat(applyAsFloat(t));
+        return (byte t) -> after.applyAsByte(applyAsByte(t));
     }
 
     /**
@@ -52,7 +52,7 @@ public interface FloatUnaryOperator {
      *
      * @return a unary operator that always returns its input argument
      */
-    static FloatUnaryOperator identity() {
+    static ByteUnaryOperator identity() {
         return t -> t;
     }
 }

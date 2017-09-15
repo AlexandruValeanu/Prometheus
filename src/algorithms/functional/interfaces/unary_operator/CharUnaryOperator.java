@@ -1,9 +1,9 @@
-package algorithms.functional.interfaces;
+package algorithms.functional.interfaces.unary_operator;
 
 import java.util.Objects;
 
 @FunctionalInterface
-public interface ShortUnaryOperator {
+public interface CharUnaryOperator {
 
     /**
      * Applies this operator to the given operand.
@@ -11,7 +11,7 @@ public interface ShortUnaryOperator {
      * @param operand the operand
      * @return the operator result
      */
-    short applyAsShort(short operand);
+    char applyAsChar(char operand);
 
     /**
      * Returns a composed operator that first applies the {@code before}
@@ -25,9 +25,9 @@ public interface ShortUnaryOperator {
      * @throws NullPointerException if before is null
      *
      */
-    default ShortUnaryOperator compose(ShortUnaryOperator before) {
+    default CharUnaryOperator compose(CharUnaryOperator before) {
         Objects.requireNonNull(before);
-        return (short v) -> applyAsShort(before.applyAsShort(v));
+        return (char v) -> applyAsChar(before.applyAsChar(v));
     }
 
     /**
@@ -42,9 +42,9 @@ public interface ShortUnaryOperator {
      * @throws NullPointerException if after is null
      *
      */
-    default ShortUnaryOperator andThen(ShortUnaryOperator after) {
+    default CharUnaryOperator andThen(CharUnaryOperator after) {
         Objects.requireNonNull(after);
-        return (short t) -> after.applyAsShort(applyAsShort(t));
+        return (char t) -> after.applyAsChar(applyAsChar(t));
     }
 
     /**
@@ -52,7 +52,7 @@ public interface ShortUnaryOperator {
      *
      * @return a unary operator that always returns its input argument
      */
-    static ShortUnaryOperator identity() {
+    static CharUnaryOperator identity() {
         return t -> t;
     }
 }

@@ -1,8 +1,18 @@
-import data_structures.pair.mutable.PairInt;
+import algorithms.functional.Functional;
+import algorithms.functional.interfaces.predicate.FloatPredicate;
+import algorithms.functional.interfaces.predicate.ShortPredicate;
+
+import java.util.Arrays;
+import java.util.Optional;
+import java.util.function.DoublePredicate;
+import java.util.function.IntPredicate;
 
 public class Main {
 
     public static void main(String[] args) {
-        PairInt pairInt = new PairInt(10, 10);
+        ShortPredicate p = x -> x % 2 == 0;
+
+        short[] xs = {1, 2, 3};
+
     }
 }

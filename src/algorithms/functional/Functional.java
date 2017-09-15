@@ -1,6 +1,10 @@
 package algorithms.functional;
 
-import algorithms.functional.interfaces.*;
+import algorithms.functional.interfaces.binary_operator.*;
+import algorithms.functional.interfaces.predicate.*;
+import algorithms.functional.interfaces.unary_operator.*;
+import data_structures.pair.mutable.PairInt;
+import data_structures.tuple.mutable.TupleInt;
 import org.apache.commons.lang3.ArrayUtils;
 import org.jetbrains.annotations.Contract;
 
@@ -220,6 +224,62 @@ public class Functional {
     }
 
     @Contract("_, null -> null")
+    public static byte[] map(ByteUnaryOperator f, byte... xs){
+        if (xs == null)
+            return null;
+
+        byte[] ys = new byte[xs.length];
+
+        for (int i = 0; i < xs.length; i++) {
+            ys[i] = f.applyAsByte(xs[i]);
+        }
+
+        return ys;
+    }
+
+    @Contract("_, null -> null")
+    public static boolean[] map(BooleanUnaryOperator f, boolean... xs){
+        if (xs == null)
+            return null;
+
+        boolean[] ys = new boolean[xs.length];
+
+        for (int i = 0; i < xs.length; i++) {
+            ys[i] = f.applyAsBoolean(xs[i]);
+        }
+
+        return ys;
+    }
+
+    @Contract("_, null -> null")
+    public static char[] map(CharUnaryOperator f, char... xs){
+        if (xs == null)
+            return null;
+
+        char[] ys = new char[xs.length];
+
+        for (int i = 0; i < xs.length; i++) {
+            ys[i] = f.applyAsChar(xs[i]);
+        }
+
+        return ys;
+    }
+
+    @Contract("_, null -> null")
+    public static short[] map(ShortUnaryOperator f, short... xs){
+        if (xs == null)
+            return null;
+
+        short[] ys = new short[xs.length];
+
+        for (int i = 0; i < xs.length; i++) {
+            ys[i] = f.applyAsShort(xs[i]);
+        }
+
+        return ys;
+    }
+
+    @Contract("_, null -> null")
     public static int[] map(IntUnaryOperator f, int... xs){
         if (xs == null)
             return null;
@@ -242,6 +302,20 @@ public class Functional {
 
         for (int i = 0; i < xs.length; i++) {
             ys[i] = f.applyAsLong(xs[i]);
+        }
+
+        return ys;
+    }
+
+    @Contract("_, null -> null")
+    public static float[] map(FloatUnaryOperator f, float... xs){
+        if (xs == null)
+            return null;
+
+        float[] ys = new float[xs.length];
+
+        for (int i = 0; i < xs.length; i++) {
+            ys[i] = f.applyAsFloat(xs[i]);
         }
 
         return ys;
@@ -515,7 +589,57 @@ public class Functional {
         return ArrayUtils.subarray(xs, 0, xs.length - k);
     }
 
-    // todo: implement all filters - after implementing corresponding streams
+    public static byte[] filter(BytePredicate p, byte... xs){
+        if (xs == null)
+            return null;
+
+        List<Byte> list = new ArrayList<>();
+
+        for (byte x: xs)
+            if (p.test(x))
+                list.add(x);
+
+        return ArrayUtils.toPrimitive(list.toArray(new Byte[list.size()]));
+    }
+
+    public static boolean[] filter(BooleanPredicate p, boolean... xs){
+        if (xs == null)
+            return null;
+
+        List<Boolean> list = new ArrayList<>();
+
+        for (boolean x: xs)
+            if (p.test(x))
+                list.add(x);
+
+        return ArrayUtils.toPrimitive(list.toArray(new Boolean[list.size()]));
+    }
+
+    public static char[] filter(CharPredicate p, char... xs){
+        if (xs == null)
+            return null;
+
+        List<Character> list = new ArrayList<>();
+
+        for (char x: xs)
+            if (p.test(x))
+                list.add(x);
+
+        return ArrayUtils.toPrimitive(list.toArray(new Character[list.size()]));
+    }
+
+    public static short[] filter(ShortPredicate p, short... xs){
+        if (xs == null)
+            return null;
+
+        List<Short> list = new ArrayList<>();
+
+        for (short x: xs)
+            if (p.test(x))
+                list.add(x);
+
+        return ArrayUtils.toPrimitive(list.toArray(new Short[list.size()]));
+    }
 
     public static int[] filter(IntPredicate p, int... xs){
         return Arrays.stream(xs).filter(p).toArray();
@@ -523,6 +647,19 @@ public class Functional {
 
     public static long[] filter(LongPredicate p, long... xs){
         return Arrays.stream(xs).filter(p).toArray();
+    }
+
+    public static float[] filter(FloatPredicate p, float... xs){
+        if (xs == null)
+            return null;
+
+        List<Float> list = new ArrayList<>();
+
+        for (float x: xs)
+            if (p.test(x))
+                list.add(x);
+
+        return ArrayUtils.toPrimitive(list.toArray(new Float[list.size()]));
     }
 
     public static double[] filter(DoublePredicate p, double... xs){
@@ -536,12 +673,67 @@ public class Functional {
         return ys;
     }
 
+    public static boolean allMatch(BytePredicate p, byte... xs) {
+        if (xs == null)
+            return false;
+
+        for (byte x: xs)
+            if (!p.test(x))
+                return false;
+
+        return true;
+    }
+
+    public static boolean allMatch(BooleanPredicate p, boolean... xs) {
+        if (xs == null)
+            return false;
+
+        for (boolean x: xs)
+            if (!p.test(x))
+                return false;
+
+        return true;
+    }
+
+    public static boolean allMatch(CharPredicate p, char... xs) {
+        if (xs == null)
+            return false;
+
+        for (char x: xs)
+            if (!p.test(x))
+                return false;
+
+        return true;
+    }
+
+    public static boolean allMatch(ShortPredicate p, short... xs) {
+        if (xs == null)
+            return false;
+
+        for (short x: xs)
+            if (!p.test(x))
+                return false;
+
+        return true;
+    }
+
     public static boolean allMatch(IntPredicate p, int... xs){
         return Arrays.stream(xs).allMatch(p);
     }
 
     public static boolean allMatch(LongPredicate p, long... xs){
         return Arrays.stream(xs).allMatch(p);
+    }
+
+    public static boolean allMatch(FloatPredicate p, float... xs) {
+        if (xs == null)
+            return false;
+
+        for (float x: xs)
+            if (!p.test(x))
+                return false;
+
+        return true;
     }
 
     public static boolean allMatch(DoublePredicate p, double... xs){
@@ -553,12 +745,67 @@ public class Functional {
         return Arrays.stream(xs).allMatch(p);
     }
 
+    public static boolean anyMatch(BytePredicate p, byte... xs){
+        if (xs == null)
+            return false;
+
+        for (byte x: xs)
+            if (p.test(x))
+                return true;
+
+        return false;
+    }
+
+    public static boolean anyMatch(BooleanPredicate p, boolean... xs){
+        if (xs == null)
+            return false;
+
+        for (boolean x: xs)
+            if (p.test(x))
+                return true;
+
+        return false;
+    }
+
+    public static boolean anyMatch(CharPredicate p, char... xs){
+        if (xs == null)
+            return false;
+
+        for (char x: xs)
+            if (p.test(x))
+                return true;
+
+        return false;
+    }
+
+    public static boolean anyMatch(ShortPredicate p, short... xs){
+        if (xs == null)
+            return false;
+
+        for (short x: xs)
+            if (p.test(x))
+                return true;
+
+        return false;
+    }
+
     public static boolean anyMatch(IntPredicate p, int... xs){
         return Arrays.stream(xs).anyMatch(p);
     }
 
     public static boolean anyMatch(LongPredicate p, long... xs){
         return Arrays.stream(xs).anyMatch(p);
+    }
+
+    public static boolean anyMatch(FloatPredicate p, float... xs){
+        if (xs == null)
+            return false;
+
+        for (float x: xs)
+            if (p.test(x))
+                return true;
+
+        return false;
     }
 
     public static boolean anyMatch(DoublePredicate p, double... xs){
@@ -753,6 +1000,4 @@ public class Functional {
     public static <T> Optional<T> min(Comparator<T> comp, T... xs){
         return Arrays.stream(xs).min(comp);
     }
-
-
 }
